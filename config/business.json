@@ -1,0 +1,66 @@
+{
+  "businessName": "Nitin Plywood House",
+  "tagline": "Premium Quality Plywood & Hardware Solutions",
+  "phone": "+91-9876543210",
+  "whatsapp": "+91-9876543210",
+  "email": "info@delhiplywood.com",
+  "website": "delhiplywood.com",
+  "address": {
+    "street": "123 Industrial Area",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "pincode": "110001",
+    "full": "123 Industrial Area, New Delhi, Delhi 110001"
+  },
+  "googleMapsLink": "https://maps.google.com/",
+  "hours": {
+    "weekdays": "9:00 AM - 7:00 PM",
+    "saturday": "9:00 AM - 6:00 PM",
+    "sunday": "10:00 AM - 5:00 PM"
+  },
+  "established": "1995",
+  "socialMedia": {
+    "facebook": "https://facebook.com/nitinplywood",
+    "instagram": "https://instagram.com/nitinplywood"
+  },
+  "products": [
+    {
+      "name": "Marine Plywood",
+      "description": "Waterproof plywood perfect for marine applications and high-moisture environments",
+      "icon": "🚢"
+    },
+    {
+      "name": "Pine Plywood",
+      "description": "High-quality pine plywood for furniture and interior applications",
+      "icon": "🌲"
+    },
+    {
+      "name": "MDF Boards",
+      "description": "Medium Density Fiberboard for smooth finishing and detailed work",
+      "icon": "📋"
+    },
+    {
+      "name": "Sunmica & Laminates",
+      "description": "Decorative laminates for beautiful surface finishing",
+      "icon": "✨"
+    },
+    {
+      "name": "Fevicol & Adhesives",
+      "description": "Premium quality adhesives for strong and lasting bonds",
+      "icon": "🔗"
+    },
+    {
+      "name": "Hardware Items",
+      "description": "Nails, screws, drill bits, blades and other essential hardware",
+      "icon": "🔧"
+    }
+  ],
+  "features": [
+    "20+ Years of Experience",
+    "Quality Assured Products",
+    "Instant Customer Service",
+    "Trusted by Schools & Colleges",
+    "Competitive Pricing",
+    "Quick Delivery"
+  ]
+}
