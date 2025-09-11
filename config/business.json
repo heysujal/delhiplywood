@@ -1,18 +1,18 @@
 {
   "businessName": "Nitin Plywood House",
   "tagline": "Premium Quality Plywood & Hardware Solutions",
-  "phone": "+91-9876543210",
-  "whatsapp": "+91-9876543210",
-  "email": "info@delhiplywood.com",
+  "phone": "+91-9212017608",
+  "whatsapp": "+91-9212017608",
+  "email": "gshankerlal4@gmail.com",
   "website": "delhiplywood.com",
   "address": {
-    "street": "123 Industrial Area",
-    "city": "New Delhi",
+    "street": "Near Dayal Market, Main Narela Road",
+    "city": "Alipur",
     "state": "Delhi",
-    "pincode": "110001",
-    "full": "123 Industrial Area, New Delhi, Delhi 110001"
+    "pincode": "110036",
+    "full": "Near Dayal Market, Main Narela Road, Alipur, Delhi, 110036"
   },
-  "googleMapsLink": "https://maps.google.com/",
+  "googleMapsLink": "https://maps.app.goo.gl/39JeLPLZbGXKwgsU7",
   "hours": {
     "weekdays": "9:00 AM - 7:00 PM",
     "saturday": "9:00 AM - 6:00 PM",
@@ -20,8 +20,8 @@
   },
   "established": "1995",
   "socialMedia": {
-    "facebook": "https://facebook.com/nitinplywood",
-    "instagram": "https://instagram.com/nitinplywood"
+    "facebook": "",
+    "instagram": ""
   },
   "products": [
     {
