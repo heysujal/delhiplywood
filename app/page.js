@@ -628,7 +628,7 @@ export default function HomePage() {
                   <Phone className="w-7 h-7" />
                 </div>
                 <h3 className="font-bold text-lg text-amber-900 mb-3">Contact Us</h3>
-                <div className="space-y-3 text-amber-700 text-sm">
+                <div className="space-y-3 text-amber-700 text-sm flex items-center flex-col">
                   <button
                     onClick={handleCall}
                     className="flex items-center justify-center gap-2 text-amber-900 hover:text-amber-600 font-semibold transition-colors"
