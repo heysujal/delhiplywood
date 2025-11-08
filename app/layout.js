@@ -116,13 +116,7 @@ export const metadata = {
     "msapplication-TileColor": "#d97706",
     "theme-color": "#d97706",
   },
-  
-  // Viewport (handled by Next.js by default, but being explicit)
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
+ 
   
   generator: "Next.js",
 }
