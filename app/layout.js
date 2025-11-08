@@ -63,28 +63,37 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: businessConfig.businessName,
-              description: businessConfig.tagline,
-              url: `https://${businessConfig.website}`,
-              telephone: businessConfig.phone,
-              email: businessConfig.email,
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: businessConfig.address.street,
-                addressLocality: businessConfig.address.city,
-                addressRegion: businessConfig.address.state,
-                postalCode: businessConfig.address.pincode,
-                addressCountry: "IN",
-              },
-              openingHours: ["Mo-Fr 09:00-19:00", "Sa 09:00-18:00", "Su 10:00-17:00"],
-              foundingDate: businessConfig.established,
-              priceRange: "$$",
-              paymentAccepted: "Cash, Card, UPI",
-              currenciesAccepted: "INR",
-            }),
+            __html: JSON.stringify((() => {
+              const schema = {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                name: businessConfig.businessName,
+                description: businessConfig.tagline,
+                url: `https://${businessConfig.website}`,
+                telephone: businessConfig.phone,
+                email: businessConfig.email,
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: businessConfig.address.street,
+                  addressLocality: businessConfig.address.city,
+                  addressRegion: businessConfig.address.state,
+                  postalCode: businessConfig.address.pincode,
+                  addressCountry: "IN",
+                },
+                openingHours: ["Mo-Fr 09:00-19:00", "Sa 09:00-18:00", "Su 10:00-17:00"],
+                foundingDate: businessConfig.established,
+                priceRange: "$$",
+                paymentAccepted: businessConfig.paymentMethods ? businessConfig.paymentMethods.join(", ") : "Cash, Card, UPI",
+                currenciesAccepted: "INR",
+              }
+              if (businessConfig.areasServed && businessConfig.areasServed.length > 0) {
+                schema.areaServed = businessConfig.areasServed.map(area => ({
+                  "@type": "City",
+                  name: area
+                }))
+              }
+              return schema
+            })()),
           }}
         />
       </head>

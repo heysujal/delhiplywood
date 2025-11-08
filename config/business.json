@@ -23,36 +23,59 @@
     "facebook": "",
     "instagram": ""
   },
+  "gst": "GST Registered",
+  "paymentMethods": ["Cash", "UPI", "Credit Card", "Debit Card", "Bank Transfer"],
+  "delivery": {
+    "areas": ["Delhi NCR", "North Delhi", "Alipur", "Narela", "Burari", "Rohini"],
+    "minimumOrder": "Free delivery on orders above ₹5000",
+    "sameDay": "Same-day delivery available for local orders"
+  },
+  "trustBadges": [
+    "GST Registered Business",
+    "20+ Years of Trust",
+    "1000+ Happy Customers",
+    "Quality Certified Products"
+  ],
   "products": [
     {
       "name": "Marine Plywood",
       "description": "Waterproof plywood perfect for marine applications and high-moisture environments",
-      "icon": "🚢"
+      "icon": "🚢",
+      "grade": "BWR Grade",
+      "thickness": "6mm - 25mm"
     },
     {
       "name": "Pine Plywood",
       "description": "High-quality pine plywood for furniture and interior applications",
-      "icon": "🌲"
+      "icon": "🌲",
+      "grade": "MR Grade",
+      "thickness": "6mm - 19mm"
     },
     {
       "name": "MDF Boards",
       "description": "Medium Density Fiberboard for smooth finishing and detailed work",
-      "icon": "📋"
+      "icon": "📋",
+      "grade": "Premium Quality",
+      "thickness": "6mm - 25mm"
     },
     {
       "name": "Sunmica & Laminates",
       "description": "Decorative laminates for beautiful surface finishing",
-      "icon": "✨"
+      "icon": "✨",
+      "brands": "Greenlam, Merino, Century",
+      "thickness": "0.8mm - 1.5mm"
     },
     {
       "name": "Fevicol & Adhesives",
       "description": "Premium quality adhesives for strong and lasting bonds",
-      "icon": "🔗"
+      "icon": "🔗",
+      "brands": "Fevicol, Araldite, Pidilite"
     },
     {
       "name": "Hardware Items",
       "description": "Nails, screws, drill bits, blades and other essential hardware",
-      "icon": "🔧"
+      "icon": "🔧",
+      "categories": "Screws, Nails, Hinges, Handles, Locks"
     }
   ],
   "features": [
@@ -61,6 +84,21 @@
     "Instant Customer Service",
     "Trusted by Schools & Colleges",
     "Competitive Pricing",
-    "Quick Delivery"
-  ]
+    "Quick Delivery",
+    "GST Registered",
+    "Bulk Order Discounts"
+  ],
+  "testimonials": [
+    {
+      "quote": "Best quality plywood in Alipur area. Been buying from them for 5 years!",
+      "author": "Rajesh Kumar",
+      "role": "Furniture Manufacturer"
+    },
+    {
+      "quote": "Trusted supplier for our school furniture projects. Always on time!",
+      "author": "Principal Sharma",
+      "role": "Principal, BCP SKV Vidyalaya"
+    }
+  ],
+  "areasServed": ["Delhi", "NCR", "Alipur", "Narela", "Burari", "Rohini", "Pitampura", "Model Town"]
 }
