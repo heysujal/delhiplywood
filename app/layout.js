@@ -23,7 +23,7 @@ export const metadata = {
     description: `Premium quality plywood and hardware supplier in Delhi NCR. Serving schools, colleges, and businesses for over ${new Date().getFullYear() - businessConfig.established} years.`,
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/hero-logo.png",
         width: 1200,
         height: 630,
         alt: `${businessConfig.businessName} - Premium Plywood Supplier`,
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     title: `${businessConfig.businessName} - ${businessConfig.tagline}`,
     description: `Premium quality plywood and hardware supplier in Delhi NCR. Call ${businessConfig.phone} for instant quotes.`,
-    images: ["/og-image.jpg"],
+    images: ["/hero-logo.png"],
   },
   alternates: {
     canonical: `https://${businessConfig.website}`,

@@ -168,7 +168,7 @@
 }
 
 .glass-effect {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.6); /* tint on the element itself */
+  -webkit-backdrop-filter: blur(12px) saturate(1.1); /* explicit values for Safari */
+  backdrop-filter: blur(12px) saturate(1.1);
 }

@@ -18,7 +18,7 @@
     "saturday": "9:00 AM - 7:30 PM",
     "sunday": "9:00 AM - 7:30 PM"
   },
-  "established": "1995",
+  "established": "2000",
   "socialMedia": {
     "facebook": "",
     "instagram": ""
@@ -27,7 +27,6 @@
   "paymentMethods": ["Cash", "UPI", "Credit Card", "Debit Card", "Bank Transfer"],
   "delivery": {
     "areas": ["Delhi NCR", "North Delhi", "Alipur", "Narela", "Burari", "Rohini"],
-    "minimumOrder": "Free delivery on orders above ₹5000",
     "sameDay": "Same-day delivery available for local orders"
   },
   "trustBadges": [

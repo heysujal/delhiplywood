@@ -27,6 +27,7 @@ import {
   HeartHandshake,
   Sparkles,
 } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa"
 import businessConfig from "@/config/business.json"
 
 // Inline Button Component
@@ -197,7 +198,7 @@ export default function HomePage() {
                 <span className="hidden lg:inline">Call</span>
               </Button>
               <Button onClick={handleWhatsApp} size="sm">
-                <MessageCircle className="w-4 h-4" />
+                <FaWhatsapp className="w-4 h-4" />
                 <span className="hidden lg:inline">WhatsApp</span>
               </Button>
             </div>
@@ -244,7 +245,7 @@ export default function HomePage() {
                   Call
                 </Button>
                 <Button onClick={handleWhatsApp} size="sm" className="flex-1">
-                  <MessageCircle className="w-4 h-4" />
+                  <FaWhatsapp className="w-4 h-4" />
                   WhatsApp
                 </Button>
               </div>
@@ -297,7 +298,7 @@ export default function HomePage() {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button onClick={handleWhatsApp} size="lg" variant="outline" className="group">
-                <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <FaWhatsapp className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 WhatsApp Chat
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -568,10 +569,10 @@ export default function HomePage() {
             <Button
               onClick={handleWhatsApp}
               size="lg"
-              variant="outline"
+              variant="ghost"
               className="border-2 border-white text-white hover:bg-white/10"
             >
-              <MessageCircle className="w-5 h-5" />
+              <FaWhatsapp className="w-5 h-5" />
               WhatsApp Now
             </Button>
           </div>
@@ -644,7 +645,7 @@ export default function HomePage() {
                     {email}
                   </button>
                   <Button onClick={handleWhatsApp} size="sm" variant="outline" className="mt-2">
-                    <MessageCircle className="w-4 h-4" />
+                    <FaWhatsapp className="w-4 h-4" />
                     WhatsApp
                   </Button>
                 </div>
