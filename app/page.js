@@ -27,8 +27,9 @@ import {
   HeartHandshake,
   Sparkles,
 } from "lucide-react"
-import { FaWhatsapp } from "react-icons/fa"
+import { FaGoogle, FaWhatsapp } from "react-icons/fa"
 import businessConfig from "@/config/business.json"
+import Link from "next/link"
 
 // Inline Button Component
 function Button({ children, className = "", onClick, variant = "default", size = "default", ...props }) {
@@ -459,7 +460,7 @@ export default function HomePage() {
               </h2>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               {testimonials.map((testimonial, index) => (
                 <Card
                   key={index}
@@ -488,6 +489,21 @@ export default function HomePage() {
                 </Card>
               ))}
             </div>
+
+            <div className="text-center">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-amber-900 mb-4">
+                See all testimonials on our <span className="gradient-text">Google Reviews</span>
+              </h2>
+              <Link href={'https://www.google.com/search?sca_esv=79231a2a76414654&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-Eyx6ntIUFkxPSztxc9fykc-EqhLO3M2qbLw--KmKLWSelr6OHzoTccrZSN-yfpcgwGHzcO52vXAVjVXLmbhZ2HVWiRHHMXeJ3hTHC7FpvKYnTKWncg%3D%3D&q=Nitin+Plywood+House+Reviews&sa=X&ved=2ahUKEwjfyazD8OaQAxVcV2wGHYawMaYQ0bkNegQILRAE'}>
+
+              <Button size="lg" variant="outline" className="group">
+                <FaGoogle className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                Visit Google Reviews
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+              </Link>
+            </div>
+            
           </div>
         </section>
       )}
