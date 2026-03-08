@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import businessConfig from "@/config/business.json"
 import { Suspense } from "react"
+import Script from 'next/script'
 
 // Calculate years of experience
 const yearsOfExperience = new Date().getFullYear() - parseInt(businessConfig.established)
@@ -296,6 +297,20 @@ export default function RootLayout({ children }) {
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         <Analytics />
+        {/* Google tag */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-ESXN3N85E5"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ESXN3N85E5');
+          `}
+        </Script>
       </body>
     </html>
   )
