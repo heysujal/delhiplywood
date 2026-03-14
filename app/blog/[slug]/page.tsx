@@ -47,6 +47,11 @@ export default function BlogPostPage({ params }: Props) {
 
   const related = getAllPosts()
     .filter((p) => p.slug !== post.slug)
+    .sort((a, b) => {
+      const aOverlap = a.frontmatter.tags.filter((tag) => post.frontmatter.tags.includes(tag)).length
+      const bOverlap = b.frontmatter.tags.filter((tag) => post.frontmatter.tags.includes(tag)).length
+      return bOverlap - aOverlap
+    })
     .slice(0, 3)
 
   const url = `${baseUrl}/blog/${post.slug}`
@@ -133,10 +138,15 @@ export default function BlogPostPage({ params }: Props) {
           </h2>
           <p className="text-amber-800 mb-3">
             Delhi Plywood House supplies Meranti plywood, pine plywood, MDF, HDMR, sunmica and
-            laminates for modular kitchens, wardrobes and full home renovation across Delhi.
+            laminates for modular kitchens, wardrobes and full home renovation in Delhi NCR with
+            Pan-India supply support.
           </p>
           <p className="text-amber-900 font-semibold">
-            Need quality plywood? Call +91-9212017608 or{" "}
+            Need quality plywood?{" "}
+            <a href="tel:+919212017608" className="underline">
+              Call +91-9212017608
+            </a>{" "}
+            or{" "}
             <a
               href="https://wa.me/919212017608"
               target="_blank"
@@ -147,6 +157,14 @@ export default function BlogPostPage({ params }: Props) {
             </a>
             .
           </p>
+          <div className="mt-4 text-sm text-amber-800 flex flex-wrap gap-4">
+            <Link href="/renovation" className="underline font-semibold text-amber-900">
+              Renovation material planning
+            </Link>
+            <Link href="/blog" className="underline font-semibold text-amber-900">
+              Read more plywood guides
+            </Link>
+          </div>
         </section>
 
         <a
@@ -168,4 +186,3 @@ export default function BlogPostPage({ params }: Props) {
     </main>
   )
 }
-

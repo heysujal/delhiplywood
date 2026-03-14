@@ -106,6 +106,9 @@ export default function HomePage() {
   } = businessConfig
 
   const yearsOfExperience = new Date().getFullYear() - parseInt(established)
+  const whatsappLink = `https://wa.me/${whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
+    "Hi! I'm interested in your plywood products. Please share more details and pricing."
+  )}`
 
   useEffect(() => {
     const handleScroll = () => {
@@ -136,21 +139,6 @@ export default function HomePage() {
       sections.forEach((section) => observer.unobserve(section))
     }
   }, [])
-
-  const handleCall = () => {
-    window.location.href = `tel:${phone}`
-  }
-
-  const handleWhatsApp = () => {
-    const message = encodeURIComponent(
-      `Hi! I'm interested in your plywood products. Please share more details and pricing.`
-    )
-    window.open(`https://wa.me/${whatsapp.replace(/[^0-9]/g, "")}?text=${message}`, "_blank")
-  }
-
-  const handleEmail = () => {
-    window.location.href = `mailto:${email}`
-  }
 
   const handleMap = () => {
     window.open(googleMapsLink, "_blank")
@@ -200,14 +188,18 @@ export default function HomePage() {
             
             {/* Desktop CTA Buttons */}
             <div className="hidden md:flex items-center gap-3">
-              <Button onClick={handleCall} size="sm" variant="outline">
-                <Phone className="w-4 h-4" />
-                <span className="hidden lg:inline">Call</span>
-              </Button>
-              <Button onClick={handleWhatsApp} size="sm">
-                <FaWhatsapp className="w-4 h-4" />
-                <span className="hidden lg:inline">WhatsApp</span>
-              </Button>
+              <a href={`tel:${phone}`}>
+                <Button size="sm" variant="outline">
+                  <Phone className="w-4 h-4" />
+                  <span className="hidden lg:inline">Call</span>
+                </Button>
+              </a>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                <Button size="sm">
+                  <FaWhatsapp className="w-4 h-4" />
+                  <span className="hidden lg:inline">WhatsApp</span>
+                </Button>
+              </a>
             </div>
             
             {/* Mobile Menu Button */}
@@ -261,14 +253,18 @@ export default function HomePage() {
                 Contact
               </a>
               <div className="flex gap-3 pt-2">
-                <Button onClick={handleCall} size="sm" className="flex-1">
-                  <Phone className="w-4 h-4" />
-                  Call
-                </Button>
-                <Button onClick={handleWhatsApp} size="sm" className="flex-1">
-                  <FaWhatsapp className="w-4 h-4" />
-                  WhatsApp
-                </Button>
+                <a href={`tel:${phone}`} className="flex-1">
+                  <Button size="sm" className="w-full">
+                    <Phone className="w-4 h-4" />
+                    Call
+                  </Button>
+                </a>
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex-1">
+                  <Button size="sm" className="w-full">
+                    <FaWhatsapp className="w-4 h-4" />
+                    WhatsApp
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -295,7 +291,7 @@ export default function HomePage() {
             </h1>
             
             <p className="text-lg sm:text-xl md:text-2xl text-amber-800 max-w-3xl mx-auto leading-relaxed">
-              Serving Delhi NCR with quality products for over {yearsOfExperience} years. Trusted by schools, colleges, and businesses.
+              Delhi-first service with Pan-India supply support. Quality products and trusted guidance for over {yearsOfExperience} years.
             </p>
             
             {/* Stats */}
@@ -313,16 +309,20 @@ export default function HomePage() {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-              <Button onClick={handleCall} size="lg" className="group">
-                <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                Call {phone}
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button onClick={handleWhatsApp} size="lg" variant="outline" className="group">
-                <FaWhatsapp className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                WhatsApp Chat
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <a href={`tel:${phone}`}>
+                <Button size="lg" className="group">
+                  <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                  Call {phone}
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="group">
+                  <FaWhatsapp className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                  WhatsApp Chat
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
             </div>
             
             {/* Quick Features */}
@@ -454,15 +454,12 @@ export default function HomePage() {
                     </div>
                   )}
                   
-                  <Button
-                    onClick={handleCall}
-                    variant="outline"
-                    size="sm"
-                    className="w-full group"
-                  >
-                    Call {phone}
-                    <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  <a href={`tel:${phone}`}>
+                    <Button variant="outline" size="sm" className="w-full group">
+                      Call {phone}
+                      <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
@@ -532,14 +529,14 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Delivery Areas */}
+            {/* Service Coverage */}
             <Card className="hover:shadow-xl transition-all duration-300">
               <CardContent className="p-6 sm:p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white">
                     <Truck className="w-6 h-6" />
                   </div>
-                  <h3 className="text-2xl font-bold text-amber-900">Delivery Areas</h3>
+                  <h3 className="text-2xl font-bold text-amber-900">Service Coverage</h3>
                 </div>
                 <p className="text-amber-700 mb-4">{delivery.minimumOrder}</p>
                 <p className="text-amber-700 mb-4">{delivery.sameDay}</p>
@@ -595,22 +592,21 @@ export default function HomePage() {
             Ready to Get Quality Plywood?
           </h2>
           <p className="text-xl sm:text-2xl mb-8 opacity-95 max-w-2xl mx-auto">
-            Call us now for instant quotes and expert advice. We're just a phone call away!
+            Call now for instant quotes, Delhi dispatch support, and Pan-India material supply guidance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button onClick={handleCall} size="lg" variant="secondary" className="bg-white text-amber-900 hover:bg-amber-50">
-              <Phone className="w-5 h-5" />
-              Call {phone}
-            </Button>
-            <Button
-              onClick={handleWhatsApp}
-              size="lg"
-              variant="ghost"
-              className="border-2 border-white text-white hover:bg-white/10"
-            >
-              <FaWhatsapp className="w-5 h-5" />
-              WhatsApp Now
-            </Button>
+            <a href={`tel:${phone}`}>
+              <Button size="lg" variant="secondary" className="bg-white text-amber-900 hover:bg-amber-50">
+                <Phone className="w-5 h-5" />
+                Call {phone}
+              </Button>
+            </a>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="ghost" className="border-2 border-white text-white hover:bg-white/10">
+                <FaWhatsapp className="w-5 h-5" />
+                WhatsApp Now
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -666,33 +662,29 @@ export default function HomePage() {
                 </div>
                 <h3 className="font-bold text-lg text-amber-900 mb-3">Contact Us</h3>
                 <div className="space-y-3 text-amber-700 text-sm flex items-center flex-col">
-                  <button
-                    onClick={handleCall}
-                    className="flex items-center justify-center gap-2 text-amber-900 hover:text-amber-600 font-semibold transition-colors"
-                  >
+                  <a href={`tel:${phone}`} className="flex items-center justify-center gap-2 text-amber-900 hover:text-amber-600 font-semibold transition-colors">
                     <Phone className="w-4 h-4" />
                     {phone}
-                  </button>
-                  <button
-                    onClick={handleEmail}
-                    className="flex items-center justify-center gap-2 text-amber-900 hover:text-amber-600 font-semibold transition-colors"
-                  >
+                  </a>
+                  <a href={`mailto:${email}`} className="flex items-center justify-center gap-2 text-amber-900 hover:text-amber-600 font-semibold transition-colors">
                     <Mail className="w-4 h-4" />
                     {email}
-                  </button>
-                  <Button onClick={handleWhatsApp} size="sm" variant="outline" className="mt-2">
-                    <FaWhatsapp className="w-4 h-4" />
-                    WhatsApp
-                  </Button>
+                  </a>
+                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" variant="outline" className="mt-2">
+                      <FaWhatsapp className="w-4 h-4" />
+                      WhatsApp
+                    </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
           </div>
           
-          {/* Areas Served */}
+          {/* Service Reach */}
           {areasServed && areasServed.length > 0 && (
             <div className="mt-12 text-center">
-              <h3 className="text-xl font-bold text-amber-900 mb-4">Areas We Serve</h3>
+              <h3 className="text-xl font-bold text-amber-900 mb-4">Service Reach</h3>
               <div className="flex flex-wrap justify-center gap-2">
                 {areasServed.map((area, index) => (
                   <span
@@ -720,7 +712,7 @@ export default function HomePage() {
                 <span className="font-bold text-xl">{businessName}</span>
               </div>
               <p className="text-amber-100 text-sm leading-relaxed">
-                {tagline}. Serving Delhi NCR with quality plywood and hardware since {established}.
+                {tagline}. Delhi-first support with Pan-India supply, serving customers since {established}.
               </p>
             </div>
             

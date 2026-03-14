@@ -75,7 +75,8 @@ export default function BlogIndexPage() {
             <Link href="/" className="font-semibold text-amber-900 hover:text-amber-700">
               Visit Delhi Plywood House
             </Link>{" "}
-            for HDMR boards, Action TESA, sunmica, laminates and complete hardware solutions.
+            for HDMR boards, Action TESA, sunmica, laminates and complete hardware solutions with
+            Pan-India supply support.
           </p>
         </section>
 
@@ -107,4 +108,3 @@ export default function BlogIndexPage() {
     </main>
   )
 }
-

@@ -39,7 +39,7 @@ export default function BlogPost({
         )}
       </header>
       <div
-        className="prose prose-amber max-w-none prose-headings:text-amber-900 prose-a:text-amber-700 prose-strong:text-amber-900"
+        className="blog-content"
         dangerouslySetInnerHTML={{ __html: html }}
       />
       <footer className="mt-10 border-t border-amber-100 pt-6 text-sm text-amber-700">
@@ -59,4 +59,3 @@ export default function BlogPost({
     </article>
   )
 }
-

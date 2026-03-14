@@ -26,8 +26,12 @@
   "gst": "GST Registered",
   "paymentMethods": ["Cash", "UPI", "Credit Card", "Debit Card", "Bank Transfer"],
   "delivery": {
-    "areas": ["Delhi NCR", "North Delhi", "Alipur", "Narela", "Burari", "Rohini"],
-    "sameDay": "Same-day delivery available for local orders"
+    "areas": [
+      "Delhi NCR (same-day delivery where possible)",
+      "Pan-India supply and transport dispatch available"
+    ],
+    "minimumOrder": "Retail and bulk orders accepted",
+    "sameDay": "Same-day delivery available across Delhi NCR (stock and timing dependent)"
   },
   "trustBadges": [
     "GST Registered Business",
@@ -163,5 +167,5 @@
       "role": "Software Engineer"
     }
   ],
-  "areasServed": ["Delhi", "NCR", "Alipur", "Narela", "Burari", "Rohini", "Pitampura", "Model Town"]
+  "areasServed": ["Delhi NCR", "Pan-India supply"]
 }

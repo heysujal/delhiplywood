@@ -22,7 +22,7 @@ const ogImageUrl = `${baseUrl}/hero-logo.png`
 const defaultPriceValidUntil = "2027-03-14"
 
 // SEO-optimized description
-const seoDescription = `${businessConfig.businessName} - ${businessConfig.tagline}. Premium quality ${productNames.toLowerCase()} supplier in ${businessConfig.address.city}, ${businessConfig.address.state}. Serving ${businessConfig.areasServed.join(", ")} for over ${yearsOfExperience} years. ${businessConfig.gst}. Call ${businessConfig.phone} for instant quotes. Free delivery available.`
+const seoDescription = `${businessConfig.businessName} - ${businessConfig.tagline}. Premium quality ${productNames.toLowerCase()} supplier in ${businessConfig.address.city}, ${businessConfig.address.state}. Delhi-first support with Pan-India supply for over ${yearsOfExperience} years. ${businessConfig.gst}. Call ${businessConfig.phone} for instant quotes.`
 
 // SEO-optimized keywords
 const seoKeywords = `plywood dealer ${businessConfig.address.city}, plywood shop ${businessConfig.address.city}, marine plywood ${businessConfig.address.city}, MDF boards ${businessConfig.address.city}, sunmica ${businessConfig.address.city}, laminates ${businessConfig.address.city}, fevicol ${businessConfig.address.city}, hardware items ${businessConfig.address.city}, plywood supplier ${businessConfig.address.state}, plywood near me, ${productKeywords}, ${areaKeywords}, ${businessConfig.address.city} plywood, ${businessConfig.address.state} plywood, Delhi NCR plywood, plywood for schools, plywood for furniture`
@@ -228,14 +228,23 @@ export default function RootLayout({ children }) {
               }
               
               // Add areas served if available
-              if (businessConfig.areasServed && businessConfig.areasServed.length > 0) {
-                schema.areaServed = businessConfig.areasServed.map(area => ({
+              schema.areaServed = [
+                {
                   "@type": "City",
-                  name: area,
+                  name: businessConfig.address.city,
                   addressRegion: businessConfig.address.state,
                   addressCountry: "IN",
-                }))
-              }
+                },
+                {
+                  "@type": "AdministrativeArea",
+                  name: "Delhi NCR",
+                  addressCountry: "IN",
+                },
+                {
+                  "@type": "Country",
+                  name: "India",
+                },
+              ]
               
               // Add products if available
               if (businessConfig.products && businessConfig.products.length > 0) {
