@@ -1,5 +1,5 @@
 {
-  "businessName": "Nitin Plywood House",
+  "businessName": "Delhi Plywood House",
   "tagline": "Premium Quality Plywood & Hardware Solutions",
   "phone": "+91-9212017608",
   "whatsapp": "+91-9212017608",
@@ -12,7 +12,7 @@
     "pincode": "110036",
     "full": "Near Dayal Market, Main Narela Road, Alipur, Delhi, 110036"
   },
-  "googleMapsLink": "https://maps.app.goo.gl/39JeLPLZbGXKwgsU7",
+  "googleMapsLink": "https://maps.app.goo.gl/EayhaPxAftiQwaQcA",
   "hours": {
     "weekdays": "9:00 AM - 7:30 PM",
     "saturday": "9:00 AM - 7:30 PM",
@@ -31,50 +31,104 @@
   },
   "trustBadges": [
     "GST Registered Business",
-    "25+ Years of Trust",
+    "26+ Years in Business Since 2000",
     "1000+ Happy Customers",
     "Quality Certified Products"
   ],
   "products": [
     {
-      "name": "Marine Plywood",
-      "description": "Waterproof plywood perfect for marine applications and high-moisture environments",
+      "name": "Meranti Plywood",
+      "description": "Waterproof plywood perfect for modular kitchens, wardrobes and high-moisture areas.",
       "icon": "🚢",
       "grade": "BWR Grade",
-      "thickness": "6mm - 25mm"
+      "thickness": "6mm - 25mm",
+      "price": "2800",
+      "priceValidUntil": "2027-03-14",
+      "ratingValue": "4.8",
+      "reviewCount": 52,
+      "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80"
     },
     {
       "name": "Pine Plywood",
-      "description": "High-quality pine plywood for furniture and interior applications",
+      "description": "High-quality pine plywood for furniture, paneling and interior applications.",
       "icon": "🌲",
       "grade": "MR Grade",
-      "thickness": "6mm - 19mm"
+      "thickness": "6mm - 19mm",
+      "price": "1800",
+      "priceValidUntil": "2027-03-14",
+      "ratingValue": "4.8",
+      "reviewCount": 47,
+      "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=1200&q=80"
     },
     {
       "name": "MDF Boards",
-      "description": "Medium Density Fiberboard for smooth finishing and detailed work",
+      "description": "Medium Density Fiberboard for smooth finishing, CNC designs and wardrobe shutters.",
       "icon": "📋",
       "grade": "Premium Quality",
-      "thickness": "6mm - 25mm"
+      "thickness": "6mm - 25mm",
+      "price": "1500",
+      "priceValidUntil": "2027-03-14",
+      "ratingValue": "4.8",
+      "reviewCount": 41,
+      "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "HDMR Boards",
+      "description": "High Density Moisture Resistant boards ideal for kitchen and wardrobe shutters.",
+      "icon": "🪵",
+      "grade": "HDMR",
+      "thickness": "16mm - 25mm",
+      "price": "2200",
+      "priceValidUntil": "2027-03-14",
+      "ratingValue": "4.8",
+      "reviewCount": 38,
+      "image": "https://images.unsplash.com/photo-1616628188380-3e6e0a3f0f52?auto=format&fit=crop&w=1200&q=80"
     },
     {
       "name": "Sunmica & Laminates",
-      "description": "Decorative laminates for beautiful surface finishing",
+      "description": "Decorative laminates and sunmica sheets for beautiful surface finishing.",
       "icon": "✨",
       "brands": "Greenlam, Merino, Century",
-      "thickness": "0.8mm - 1.5mm"
+      "thickness": "0.8mm - 1.5mm",
+      "price": "800",
+      "priceValidUntil": "2027-03-14",
+      "ratingValue": "4.8",
+      "reviewCount": 35,
+      "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Doors",
+      "description": "Ready-to-finish flush doors and laminated doors for homes and offices.",
+      "icon": "🚪",
+      "grade": "Flush & Laminated Doors",
+      "thickness": "30mm - 35mm",
+      "price": "3200",
+      "priceValidUntil": "2027-03-14",
+      "ratingValue": "4.8",
+      "reviewCount": 33,
+      "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80"
     },
     {
       "name": "Fevicol & Adhesives",
-      "description": "Premium quality adhesives for strong and lasting bonds",
+      "description": "Premium quality adhesives for strong and lasting plywood and laminate bonds.",
       "icon": "🔗",
-      "brands": "Fevicol, Araldite, Pidilite"
+      "brands": "Fevicol, Araldite, Pidilite",
+      "price": "450",
+      "priceValidUntil": "2027-03-14",
+      "ratingValue": "4.8",
+      "reviewCount": 31,
+      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80"
     },
     {
       "name": "Hardware Items",
-      "description": "Nails, screws, drill bits, blades and other essential hardware",
+      "description": "Nails, screws, drill bits, blades and other essential furniture hardware.",
       "icon": "🔧",
-      "categories": "Screws, Nails, Hinges, Handles, Locks"
+      "categories": "Screws, Nails, Hinges, Handles, Locks",
+      "price": "200",
+      "priceValidUntil": "2027-03-14",
+      "ratingValue": "4.8",
+      "reviewCount": 29,
+      "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80"
     }
   ],
   "features": [

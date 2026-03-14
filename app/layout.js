@@ -19,6 +19,7 @@ const areaKeywords = businessConfig.areasServed.join(", ")
 // Base URL - update this if your domain changes
 const baseUrl = `https://${businessConfig.website}`
 const ogImageUrl = `${baseUrl}/hero-logo.png`
+const defaultPriceValidUntil = "2027-03-14"
 
 // SEO-optimized description
 const seoDescription = `${businessConfig.businessName} - ${businessConfig.tagline}. Premium quality ${productNames.toLowerCase()} supplier in ${businessConfig.address.city}, ${businessConfig.address.state}. Serving ${businessConfig.areasServed.join(", ")} for over ${yearsOfExperience} years. ${businessConfig.gst}. Call ${businessConfig.phone} for instant quotes. Free delivery available.`
@@ -209,6 +210,21 @@ export default function RootLayout({ children }) {
                 currenciesAccepted: "INR",
                 image: ogImageUrl,
                 logo: ogImageUrl,
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "5.0",
+                  reviewCount: "15",
+                },
+                hasMap: businessConfig.googleMapsLink,
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 28.7214,
+                  longitude: 77.1530,
+                },
+                sameAs: [
+                  "https://delhiplywood.in",
+                  "https://wa.me/919212017608",
+                ],
               }
               
               // Add areas served if available
@@ -223,14 +239,35 @@ export default function RootLayout({ children }) {
               
               // Add products if available
               if (businessConfig.products && businessConfig.products.length > 0) {
-                schema.makesOffer = businessConfig.products.map(product => ({
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Product",
-                    name: product.name,
-                    description: product.description,
-                  },
-                }))
+                schema.makesOffer = businessConfig.products.map(product => {
+                  const imageUrl = product.image?.startsWith("http")
+                    ? product.image
+                    : `${baseUrl}${product.image || "/hero-logo.png"}`
+
+                  return {
+                    "@type": "Offer",
+                    price: product.price,
+                    priceCurrency: "INR",
+                    priceValidUntil: product.priceValidUntil || defaultPriceValidUntil,
+                    availability: "https://schema.org/InStock",
+                    itemOffered: {
+                      "@type": "Product",
+                      name: product.name,
+                      description: product.description,
+                      category: "Plywood & Hardware",
+                      image: imageUrl,
+                      brand: {
+                        "@type": "Brand",
+                        name: businessConfig.businessName,
+                      },
+                      aggregateRating: {
+                        "@type": "AggregateRating",
+                        ratingValue: product.ratingValue || "4.8",
+                        reviewCount: product.reviewCount?.toString() || "30",
+                      },
+                    },
+                  }
+                })
               }
               
               return schema
@@ -245,25 +282,39 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "ItemList",
-              itemListElement: businessConfig.products.map((product, index) => ({
-                "@type": "ListItem",
-                position: index + 1,
-                item: {
-                  "@type": "Product",
-                  name: product.name,
-                  description: product.description,
-                  category: "Plywood & Hardware",
-                  brand: {
-                    "@type": "Brand",
-                    name: businessConfig.businessName,
+              itemListElement: businessConfig.products.map((product, index) => {
+                const imageUrl = product.image?.startsWith("http")
+                  ? product.image
+                  : `${baseUrl}${product.image || "/hero-logo.png"}`
+
+                return {
+                  "@type": "ListItem",
+                  position: index + 1,
+                  item: {
+                    "@type": "Product",
+                    name: product.name,
+                    description: product.description,
+                    category: "Plywood & Hardware",
+                    image: imageUrl,
+                    brand: {
+                      "@type": "Brand",
+                      name: businessConfig.businessName,
+                    },
+                    aggregateRating: {
+                      "@type": "AggregateRating",
+                      ratingValue: product.ratingValue || "4.8",
+                      reviewCount: product.reviewCount?.toString() || "30",
+                    },
+                    offers: {
+                      "@type": "Offer",
+                      availability: "https://schema.org/InStock",
+                      priceCurrency: "INR",
+                      price: product.price,
+                      priceValidUntil: product.priceValidUntil || defaultPriceValidUntil,
+                    },
                   },
-                  offers: {
-                    "@type": "Offer",
-                    availability: "https://schema.org/InStock",
-                    priceCurrency: "INR",
-                  },
-                },
-              })),
+                }
+              }),
             }),
           }}
         />

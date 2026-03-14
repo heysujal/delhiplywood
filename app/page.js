@@ -187,6 +187,12 @@ export default function HomePage() {
               <a href="#features" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
                 Why Us
               </a>
+              <Link href="/blog" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
+                Blog
+              </Link>
+              <Link href="/renovation" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
+                Renovation
+              </Link>
               <a href="#contact" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
                 Contact
               </a>
@@ -233,6 +239,20 @@ export default function HomePage() {
               >
                 Why Us
               </a>
+              <Link
+                href="/blog"
+                className="text-amber-900 font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Blog
+              </Link>
+              <Link
+                href="/renovation"
+                className="text-amber-900 font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Renovation
+              </Link>
               <a
                 href="#contact"
                 className="text-amber-900 font-medium py-2"
@@ -333,7 +353,7 @@ export default function HomePage() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-amber-900 mb-4">
-              Why Choose <span className="gradient-text">Nitin Plywood House?</span>
+              Why Choose <span className="gradient-text">{businessName}?</span>
             </h2>
             <p className="text-lg text-amber-700 max-w-2xl mx-auto">
               Your trusted partner for premium plywood and hardware solutions
@@ -435,12 +455,12 @@ export default function HomePage() {
                   )}
                   
                   <Button
-                    onClick={handleWhatsApp}
+                    onClick={handleCall}
                     variant="outline"
                     size="sm"
                     className="w-full group"
                   >
-                    Get Quote
+                    Call {phone}
                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </CardContent>
@@ -494,7 +514,7 @@ export default function HomePage() {
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-amber-900 mb-4">
                 See all testimonials on our <span className="gradient-text">Google Reviews</span>
               </h2>
-              <Link href={'https://www.google.com/search?sca_esv=79231a2a76414654&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-Eyx6ntIUFkxPSztxc9fykc-EqhLO3M2qbLw--KmKLWSelr6OHzoTccrZSN-yfpcgwGHzcO52vXAVjVXLmbhZ2HVWiRHHMXeJ3hTHC7FpvKYnTKWncg%3D%3D&q=Nitin+Plywood+House+Reviews&sa=X&ved=2ahUKEwjfyazD8OaQAxVcV2wGHYawMaYQ0bkNegQILRAE'}>
+              <Link href={'https://www.google.com/search?sca_esv=79231a2a76414654&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-Eyx6ntIUFkxPSztxc9fykc-EqhLO3M2qbLw--KmKLWSelr6OHzoTccrZSN-yfpcgwGHzcO52vXAVjVXLmbhZ2HVWiRHHMXeJ3hTHC7FpvKYnTKWncg%3D%3D&q=Delhi+Plywood+House+Reviews&sa=X&ved=2ahUKEwjfyazD8OaQAxVcV2wGHYawMaYQ0bkNegQILRAE'}>
 
               <Button size="lg" variant="outline" className="group">
                 <FaGoogle className="w-5 h-5 group-hover:scale-110 transition-transform" />
@@ -700,7 +720,7 @@ export default function HomePage() {
                 <span className="font-bold text-xl">{businessName}</span>
               </div>
               <p className="text-amber-100 text-sm leading-relaxed">
-                {tagline}. Serving Delhi NCR with quality products since {established}.
+                {tagline}. Serving Delhi NCR with quality plywood and hardware since {established}.
               </p>
             </div>
             
@@ -711,6 +731,16 @@ export default function HomePage() {
                   <a href="#products" className="hover:text-white transition-colors">
                     Products
                   </a>
+                </li>
+                <li>
+                  <Link href="/blog" className="hover:text-white transition-colors">
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/renovation" className="hover:text-white transition-colors">
+                    Renovation
+                  </Link>
                 </li>
                 <li>
                   <a href="#features" className="hover:text-white transition-colors">
@@ -742,19 +772,33 @@ export default function HomePage() {
                 </li>
                 <li className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />
-                  <span>{address.city}, {address.state}</span>
+                  <a
+                    href="https://maps.app.goo.gl/EayhaPxAftiQwaQcA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    {address.full}
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
-          
-          <div className="border-t border-amber-800 pt-8 text-center text-sm text-amber-200">
-            <p>
-              © {new Date().getFullYear()} {businessName}. All rights reserved. | {gst}
-            </p>
-            <p className="mt-2">
-              Serving Delhi NCR with quality plywood and hardware since {established}
-            </p>
+
+          {/* Embedded Map */}
+          <div className="mt-10">
+            <div className="aspect-video w-full rounded-xl overflow-hidden border border-amber-800/60 shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218.52489440428113!2d77.13200091264055!3d28.79720189694445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d009de6843a1d%3A0xc94e84f82631bf90!2sNitin%20Plywood%20House!5e0!3m2!1sen!2sin!4v1773496311127!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Delhi Plywood House location map"
+                allowFullScreen
+              />
+            </div>
           </div>
         </div>
       </footer>
