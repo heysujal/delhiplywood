@@ -29,6 +29,7 @@ import {
 } from "lucide-react"
 import { FaGoogle, FaWhatsapp } from "react-icons/fa"
 import businessConfig from "@/config/business.json"
+import reviewsConfig from "@/config/reviews.json"
 import Link from "next/link"
 
 // "Brands available" is derived from each product's brands in business.json,
@@ -41,6 +42,17 @@ const brandGroups = Object.entries(
     return groups
   }, {})
 ).map(([group, brands]) => ({ group, brands: [...brands] }))
+
+const { reviews, allReviewsUrl, writeReviewUrl } = reviewsConfig
+const averageRating = reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
+const writtenReviews = reviews.filter((r) => r.text)
+
+// "2025-11-10" -> "Nov 2025", without timezone-dependent Date parsing
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+const formatMonthYear = (isoDate) => {
+  const [year, month] = isoDate.split("-")
+  return `${MONTHS[Number(month) - 1]} ${year}`
+}
 
 const storePhotos = [
   { src: "/images/nitin-plywood-house-signboard-alipur-delhi.webp", alt: "Nitin Plywood House signboard on Main Narela Road, Alipur, Delhi" },
@@ -120,7 +132,6 @@ export default function HomePage() {
     paymentMethods,
     delivery,
     trustBadges,
-    testimonials,
     areasServed,
     googleMapsLink,
     logo,
@@ -524,63 +535,69 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Trust & Testimonials Section */}
-      {testimonials && testimonials.length > 0 && (
-        <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white/50">
-          <div className="container mx-auto max-w-6xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-amber-900 mb-4">
-                What Our <span className="gradient-text">Customers Say</span>
-              </h2>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              {testimonials.map((testimonial, index) => (
-                <Card
-                  key={index}
-                  className="hover:shadow-xl transition-all duration-300"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
-                  <CardContent className="p-6 sm:p-8">
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
-                      ))}
-                    </div>
-                    <p className="text-amber-800 mb-4 text-lg leading-relaxed italic">
-                      "{testimonial.quote}"
-                    </p>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center text-white font-bold">
-                        {testimonial.author.charAt(0)}
-                      </div>
-                      <div>
-                        <p className="font-semibold text-amber-900">{testimonial.author}</p>
-                        <p className="text-sm text-amber-600">{testimonial.role}</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+      {/* Google Reviews (config/reviews.json, exported from the Business Profile) */}
+      <section id="reviews" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-amber-50 to-orange-50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-amber-900 mb-4">
+              What Our <span className="gradient-text">Customers Say</span>
+            </h2>
+            <p className="inline-flex items-center gap-2 text-lg text-amber-800">
+              <FaGoogle className="w-5 h-5" aria-hidden />
+              <strong>{averageRating.toFixed(1)}</strong>
+              <span className="flex" aria-label={`${averageRating.toFixed(1)} out of 5 stars`}>
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" aria-hidden />
+                ))}
+              </span>
+              <span>from {reviews.length} Google reviews</span>
+            </p>
+          </div>
 
-            <div className="text-center">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-amber-900 mb-4">
-                See all testimonials on our <span className="gradient-text">Google Reviews</span>
-              </h2>
-              <Link href={'https://www.google.com/search?sca_esv=79231a2a76414654&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-Eyx6ntIUFkxPSztxc9fykc-EqhLO3M2qbLw--KmKLWSelr6OHzoTccrZSN-yfpcgwGHzcO52vXAVjVXLmbhZ2HVWiRHHMXeJ3hTHC7FpvKYnTKWncg%3D%3D&q=Delhi+Plywood+House+Reviews&sa=X&ved=2ahUKEwjfyazD8OaQAxVcV2wGHYawMaYQ0bkNegQILRAE'}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {writtenReviews.map((review) => (
+              <Card key={`${review.author}-${review.date}`}>
+                <CardContent className="p-6">
+                  <div className="flex gap-1 mb-3" aria-label={`${review.rating} out of 5 stars`}>
+                    {[...Array(review.rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" aria-hidden />
+                    ))}
+                  </div>
+                  <p className="text-amber-800 mb-4 leading-relaxed">"{review.text}"</p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center text-white font-bold">
+                      {review.author.charAt(0).toUpperCase()}
+                    </div>
+                    <div>
+                      <p className="font-semibold text-amber-900">{review.author}</p>
+                      <p className="text-xs text-amber-600">
+                        Google review ·{" "}
+                        {formatMonthYear(review.date)}
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
 
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href={allReviewsUrl} target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="group">
-                <FaGoogle className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                Visit Google Reviews
+                <FaGoogle className="w-5 h-5" />
+                See all reviews on Google
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              </Link>
-            </div>
-            
+            </a>
+            <a href={writeReviewUrl} target="_blank" rel="noopener noreferrer">
+              <Button size="lg">
+                <Star className="w-5 h-5" />
+                Write a review
+              </Button>
+            </a>
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
       {/* Delivery & Payment Info */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-amber-50 to-orange-50">
@@ -619,7 +636,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-2xl font-bold text-amber-900">Payment Methods</h3>
                 </div>
-                <p className="text-amber-700 mb-4">We accept all major payment methods for your convenience.</p>
+                <p className="text-amber-700 mb-4">Pay at the store or on delivery.</p>
                 <div className="flex flex-wrap gap-2">
                   {paymentMethods.map((method, index) => (
                     <span
