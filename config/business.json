@@ -68,66 +68,204 @@
   ],
   "products": [
     {
-      "name": "Meranti Plywood",
-      "description": "Waterproof plywood perfect for modular kitchens, wardrobes and high-moisture areas.",
+      "name": "BWP & Marine Plywood",
+      "group": "Plywood & Boards",
       "icon": "🚢",
+      "description": "Boiling Water Proof plywood for kitchens, bathroom vanities and other wet areas.",
+      "grade": "BWP (IS:710)",
+      "thickness": "6mm - 25mm",
+      "brands": [
+        "Lee Perry",
+        "Goldberg"
+      ],
+      "image": "/images/lee-perry-pine-plywood-delhi.webp"
+    },
+    {
+      "name": "BWR Plywood",
+      "group": "Plywood & Boards",
+      "icon": "💧",
+      "description": "Boiling Water Resistant plywood for modular kitchens, wardrobes and high-moisture areas.",
+      "grade": "BWR / MR",
+      "thickness": "6mm - 25mm",
+      "brands": [
+        "Dawar",
+        "Engpar",
+        "Goldberg"
+      ],
+      "image": "/images/bwr-plywood-high-solid-resin-delhi.webp"
+    },
+    {
+      "name": "Gurjan Plywood",
+      "group": "Plywood & Boards",
+      "icon": "🪵",
+      "description": "100% Gurjan face plywood in triple core and alternate core for strong, long-lasting furniture.",
+      "grade": "Gurjan face, triple / alternate core",
+      "thickness": "6mm - 25mm",
+      "brands": [
+        "DP Plus",
+        "Tanishka",
+        "Brownply"
+      ],
+      "image": "/images/gurjan-plywood-delhi.webp"
+    },
+    {
+      "name": "Meranti Plywood",
+      "group": "Plywood & Boards",
+      "icon": "🌳",
+      "description": "Meranti face plywood for kitchens, wardrobes and interior furniture.",
       "grade": "BWR Grade",
       "thickness": "6mm - 25mm",
+      "brands": [
+        "Dawar"
+      ],
       "image": "/images/bwr-plywood-sheets-delhi.webp"
     },
     {
       "name": "Pine Plywood",
-      "description": "High-quality pine plywood for furniture, paneling and interior applications.",
+      "group": "Plywood & Boards",
       "icon": "🌲",
-      "grade": "MR Grade",
+      "description": "Pine plywood for furniture, paneling and interior applications.",
+      "grade": "MR / BWP",
       "thickness": "6mm - 19mm",
+      "brands": [
+        "Lee Perry"
+      ],
       "image": "/images/lee-perry-pine-plywood-delhi.webp"
     },
     {
+      "name": "Block Board",
+      "group": "Plywood & Boards",
+      "icon": "🧱",
+      "description": "Block board for long shelves, beds and doors where sheets must stay straight.",
+      "thickness": "19mm - 25mm",
+      "brands": [
+        "Awani",
+        "Dawar",
+        "Goldberg"
+      ],
+      "image": "/images/dp-plus-plywood-and-awani-block-board-delhi.webp"
+    },
+    {
       "name": "MDF Boards",
-      "description": "Medium Density Fiberboard for smooth finishing, CNC designs and wardrobe shutters.",
+      "group": "Plywood & Boards",
       "icon": "📋",
+      "description": "Medium Density Fiberboard for smooth finishing, CNC designs and wardrobe shutters.",
       "grade": "Premium Quality",
       "thickness": "6mm - 25mm",
       "image": "/images/coloured-edge-boards-mdf-delhi.webp"
     },
     {
       "name": "HDMR Boards",
-      "description": "High Density Moisture Resistant boards ideal for kitchen and wardrobe shutters.",
+      "group": "Plywood & Boards",
       "icon": "🪵",
+      "description": "High Density Moisture Resistant boards ideal for kitchen and wardrobe shutters.",
       "grade": "HDMR",
       "thickness": "16mm - 25mm",
       "image": "/images/plywood-and-board-stack-delhi.webp"
     },
     {
-      "name": "Sunmica & Laminates",
-      "description": "Decorative laminates and sunmica sheets for beautiful surface finishing.",
-      "icon": "✨",
-      "brands": "Greenlam, Merino, Century",
-      "thickness": "0.8mm - 1.5mm",
-      "image": "/images/laminates-and-plywood-section-delhi.webp"
-    },
-    {
-      "name": "Doors",
-      "description": "Ready-to-finish flush doors and laminated doors for homes and offices.",
-      "icon": "🚪",
-      "grade": "Flush & Laminated Doors",
-      "thickness": "30mm - 35mm",
+      "name": "WPC & PVC Boards",
+      "group": "Plywood & Boards",
+      "icon": "🧊",
+      "description": "Waterproof, termite-proof WPC and PVC boards for bathrooms, kitchens and outdoor use.",
+      "brands": [
+        "Mysta"
+      ],
       "image": "/images/wpc-pvc-boards-and-doors-delhi.webp"
     },
     {
+      "name": "Flush Doors & WPC Doors",
+      "group": "Plywood & Boards",
+      "icon": "🚪",
+      "description": "Flush doors, laminated doors and waterproof WPC doors for homes and offices.",
+      "thickness": "30mm - 35mm",
+      "brands": [
+        "Dawar",
+        "Lee Perry",
+        "Goldberg",
+        "Mysta"
+      ],
+      "image": "/images/wpc-pvc-boards-and-doors-delhi.webp"
+    },
+    {
+      "name": "Sunmica & Laminates",
+      "group": "Laminates & Edge Band",
+      "icon": "✨",
+      "description": "Decorative laminates and sunmica sheets, with catalogues to choose shades in store.",
+      "thickness": "0.8mm - 1.5mm",
+      "brands": [
+        "Greenlam",
+        "Merino",
+        "Century"
+      ],
+      "image": "/images/laminates-and-plywood-section-delhi.webp"
+    },
+    {
+      "name": "PVC Edge Band Tape",
+      "group": "Laminates & Edge Band",
+      "icon": "🎞️",
+      "description": "PVC edge band tape in solid, wood, marble and high-gloss finishes to match your laminate.",
+      "thickness": "0.8mm x 22mm and more",
+      "brands": [
+        "aldo"
+      ],
+      "image": "/images/edge-banding-tape-rolls-delhi.webp"
+    },
+    {
       "name": "Fevicol & Adhesives",
-      "description": "Premium quality adhesives for strong and lasting plywood and laminate bonds.",
+      "group": "Adhesives",
       "icon": "🔗",
-      "brands": "Fevicol, Araldite, Pidilite",
+      "description": "Wood, laminate and PVC adhesives for strong, lasting bonds.",
+      "range": "Fevicol Marine, HeatX, ProBond, SH, Hi-Per",
+      "brands": [
+        "Fevicol",
+        "Asian Paints Trugrip",
+        "Masterlok"
+      ],
       "image": "/images/fevicol-probond-adhesive-delhi.webp"
     },
     {
-      "name": "Hardware Items",
-      "description": "Nails, screws, drill bits, blades and other essential furniture hardware.",
+      "name": "Cabinet & Furniture Hardware",
+      "group": "Hardware & Tools",
       "icon": "🔧",
-      "categories": "Screws, Nails, Hinges, Handles, Locks",
+      "description": "Handles, hinges, telescopic channels, sofa legs, locks, tower bolts and aldrops.",
+      "categories": "Handles, Hinges, Channels, Sofa Legs, Locks",
+      "brands": [
+        "Platina",
+        "Unimass",
+        "Famous",
+        "Helson",
+        "Skylux",
+        "SBT"
+      ],
       "image": "/images/cabinet-handles-and-fevicol-display-delhi.webp"
+    },
+    {
+      "name": "Tools & Consumables",
+      "group": "Hardware & Tools",
+      "icon": "🪚",
+      "description": "Saw blades, drill bits, sandpaper, screws, nails and wall plugs for carpenters.",
+      "categories": "Saw Blades, Drill Bits, Sandpaper, Screws, Nails",
+      "brands": [
+        "Tayal",
+        "Plumax",
+        "Xtra-Power"
+      ],
+      "image": "/images/hardware-fittings-shelves-delhi.webp"
+    },
+    {
+      "name": "Timber & Battens",
+      "group": "Plywood & Boards",
+      "icon": "🪵",
+      "description": "Wooden battens, beams and strips for frames, beading and support work.",
+      "image": "/images/timber-battens-delhi.webp"
+    },
+    {
+      "name": "Wire Mesh & Aluminium Sections",
+      "group": "Hardware & Tools",
+      "icon": "🔩",
+      "description": "Wire mesh rolls, aluminium pipes and profiles for jaali, frames and partitions.",
+      "image": "/images/wire-mesh-rolls-delhi.webp"
     }
   ],
   "features": [

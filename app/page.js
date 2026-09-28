@@ -31,6 +31,17 @@ import { FaGoogle, FaWhatsapp } from "react-icons/fa"
 import businessConfig from "@/config/business.json"
 import Link from "next/link"
 
+// "Brands available" is derived from each product's brands in business.json,
+// grouped by product group, so there is one place to edit.
+const brandGroups = Object.entries(
+  businessConfig.products.reduce((groups, product) => {
+    if (!product.brands) return groups
+    const brands = (groups[product.group] ||= new Set())
+    product.brands.forEach((brand) => brands.add(brand))
+    return groups
+  }, {})
+).map(([group, brands]) => ({ group, brands: [...brands] }))
+
 const storePhotos = [
   { src: "/images/nitin-plywood-house-signboard-alipur-delhi.webp", alt: "Nitin Plywood House signboard on Main Narela Road, Alipur, Delhi" },
   { src: "/images/nitin-plywood-house-store-interior.webp", alt: "Inside Nitin Plywood House: hardware shelves, Fevicol and plywood" },
@@ -432,7 +443,7 @@ export default function HomePage() {
                   </p>
                   
                   {/* Product Details */}
-                  {(product.grade || product.brands || product.thickness || product.categories) && (
+                  {(product.grade || product.brands || product.thickness || product.categories || product.range) && (
                     <div className="space-y-2 mb-6 text-sm">
                       {product.grade && (
                         <div className="flex items-center gap-2 text-amber-800">
@@ -449,7 +460,13 @@ export default function HomePage() {
                       {product.brands && (
                         <div className="flex items-center gap-2 text-amber-800">
                           <CheckCircle2 className="w-4 h-4 text-amber-600" />
-                          <span><strong>Brands:</strong> {product.brands}</span>
+                          <span><strong>Brands:</strong> {product.brands.join(", ")}</span>
+                        </div>
+                      )}
+                      {product.range && (
+                        <div className="flex items-center gap-2 text-amber-800">
+                          <CheckCircle2 className="w-4 h-4 text-amber-600" />
+                          <span><strong>Range:</strong> {product.range}</span>
                         </div>
                       )}
                       {product.categories && (
@@ -467,6 +484,39 @@ export default function HomePage() {
                       <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </a>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Brands */}
+      <section id="brands" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white/50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-amber-900 mb-4">
+              Brands <span className="gradient-text">Available at Our Store</span>
+            </h2>
+            <p className="text-lg text-amber-700 max-w-2xl mx-auto">
+              Plywood, boards, laminates, adhesives and hardware from brands carpenters trust
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {brandGroups.map(({ group, brands }) => (
+              <Card key={group}>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-amber-900 mb-4">{group}</h3>
+                  <ul className="flex flex-wrap gap-2">
+                    {brands.map((brand) => (
+                      <li
+                        key={brand}
+                        className="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-sm font-medium"
+                      >
+                        {brand}
+                      </li>
+                    ))}
+                  </ul>
                 </CardContent>
               </Card>
             ))}
