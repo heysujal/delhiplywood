@@ -33,11 +33,11 @@ import Link from "next/link"
 
 const storePhotos = [
   { src: "/images/nitin-plywood-house-signboard-alipur-delhi.webp", alt: "Nitin Plywood House signboard on Main Narela Road, Alipur, Delhi" },
+  { src: "/images/nitin-plywood-house-store-interior.webp", alt: "Inside Nitin Plywood House: hardware shelves, Fevicol and plywood" },
   { src: "/images/nitin-plywood-house-owner-at-shop.webp", alt: "Customer counter at Nitin Plywood House, Alipur" },
-  { src: "/images/laminates-and-plywood-section-delhi.webp", alt: "Laminate and plywood section at Nitin Plywood House" },
-  { src: "/images/bwr-plywood-sheets-delhi.webp", alt: "BWR plywood sheets in stock" },
+  { src: "/images/lee-perry-pine-plywood-delhi.webp", alt: "Lee Perry BWP and pine plywood sheets in stock" },
+  { src: "/images/cabinet-handles-and-fevicol-display-delhi.webp", alt: "Cabinet handles display with Fevicol Marine and HeatX adhesives" },
   { src: "/images/edge-banding-tape-rolls-delhi.webp", alt: "Edge banding tape rolls in different colours" },
-  { src: "/images/hardware-fittings-shelves-delhi.webp", alt: "Hardware and fittings shelves" },
 ]
 
 // Inline Button Component

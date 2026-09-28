@@ -83,21 +83,24 @@
       "description": "High-quality pine plywood for furniture, paneling and interior applications.",
       "icon": "🌲",
       "grade": "MR Grade",
-      "thickness": "6mm - 19mm"
+      "thickness": "6mm - 19mm",
+      "image": "/images/lee-perry-pine-plywood-delhi.webp"
     },
     {
       "name": "MDF Boards",
       "description": "Medium Density Fiberboard for smooth finishing, CNC designs and wardrobe shutters.",
       "icon": "📋",
       "grade": "Premium Quality",
-      "thickness": "6mm - 25mm"
+      "thickness": "6mm - 25mm",
+      "image": "/images/coloured-edge-boards-mdf-delhi.webp"
     },
     {
       "name": "HDMR Boards",
       "description": "High Density Moisture Resistant boards ideal for kitchen and wardrobe shutters.",
       "icon": "🪵",
       "grade": "HDMR",
-      "thickness": "16mm - 25mm"
+      "thickness": "16mm - 25mm",
+      "image": "/images/plywood-and-board-stack-delhi.webp"
     },
     {
       "name": "Sunmica & Laminates",
@@ -112,7 +115,8 @@
       "description": "Ready-to-finish flush doors and laminated doors for homes and offices.",
       "icon": "🚪",
       "grade": "Flush & Laminated Doors",
-      "thickness": "30mm - 35mm"
+      "thickness": "30mm - 35mm",
+      "image": "/images/wpc-pvc-boards-and-doors-delhi.webp"
     },
     {
       "name": "Fevicol & Adhesives",
@@ -126,7 +130,7 @@
       "description": "Nails, screws, drill bits, blades and other essential furniture hardware.",
       "icon": "🔧",
       "categories": "Screws, Nails, Hinges, Handles, Locks",
-      "image": "/images/hardware-fittings-shelves-delhi.webp"
+      "image": "/images/cabinet-handles-and-fevicol-display-delhi.webp"
     }
   ],
   "features": [
