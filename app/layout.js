@@ -4,6 +4,7 @@ import "./globals.css"
 import businessConfig from "@/config/business.json"
 import { products, productPath } from "@/lib/products"
 import ContactBar from "@/components/ContactBar"
+import SiteHeader from "@/components/SiteHeader"
 import Script from 'next/script'
 
 // Geist (weights 400-800), cut down to Latin + ₹ with fonttools: 23 KB instead
@@ -188,6 +189,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={`font-sans ${geistSans.variable} antialiased pb-16 md:pb-0`}>
+        <SiteHeader />
         {children}
         <ContactBar />
         <Analytics />

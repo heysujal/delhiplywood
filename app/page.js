@@ -24,7 +24,6 @@ import reviewsConfig from "@/config/reviews.json"
 import { products, productPath, brandsByGroup } from "@/lib/products"
 import Link from "next/link"
 import Image from "next/image"
-import HomeHeader from "@/components/HomeHeader"
 
 const brandGroups = brandsByGroup()
 
@@ -126,8 +125,6 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 overflow-x-hidden w-full">
-
-      <HomeHeader phone={phone} whatsappLink={whatsappLink} />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">

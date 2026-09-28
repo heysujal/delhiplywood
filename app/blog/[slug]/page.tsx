@@ -81,10 +81,10 @@ export default function BlogPostPage({ params }: Props) {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 px-4 sm:px-6 lg:px-8 py-24">
+    <main className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 px-4 sm:px-6 lg:px-8 pt-28 pb-24">
       <div className="container mx-auto max-w-5xl">
         <nav aria-label="Breadcrumb" className="text-sm mb-4 text-amber-700">
-          <ol className="flex items-center gap-1">
+          <ol className="flex items-center gap-1 min-w-0">
             <li>
               <Link href="/" className="hover:text-amber-900 font-medium">
                 Home
@@ -101,7 +101,7 @@ export default function BlogPostPage({ params }: Props) {
             <li aria-hidden className="px-1">
               /
             </li>
-            <li className="text-amber-900 font-semibold" aria-current="page">
+            <li className="text-amber-900 font-semibold truncate min-w-0" aria-current="page">
               {post.frontmatter.title}
             </li>
           </ol>

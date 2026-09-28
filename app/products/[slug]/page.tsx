@@ -83,7 +83,7 @@ export default function ProductPage({ params }: Props) {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 px-4 sm:px-6 lg:px-8 py-24">
+    <main className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 px-4 sm:px-6 lg:px-8 pt-28 pb-24">
       <div className="container mx-auto max-w-5xl">
         <nav aria-label="Breadcrumb" className="text-sm mb-6 text-amber-700">
           <ol className="flex flex-wrap items-center gap-1">
