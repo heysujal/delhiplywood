@@ -155,12 +155,15 @@
       "image": "/images/coloured-edge-boards-mdf-delhi.webp"
     },
     {
-      "name": "HDMR Boards",
+      "name": "HDMR / HDHMR Boards",
       "group": "Plywood & Boards",
       "icon": "🪵",
-      "description": "High Density Moisture Resistant boards ideal for kitchen and wardrobe shutters.",
+      "description": "High Density (High) Moisture Resistant boards for kitchen and wardrobe shutters and CNC work.",
       "grade": "HDMR",
       "thickness": "16mm - 25mm",
+      "brands": [
+        "Action TESA"
+      ],
       "image": "/images/plywood-and-board-stack-delhi.webp"
     },
     {
@@ -186,6 +189,13 @@
         "Mysta"
       ],
       "image": "/images/wpc-pvc-boards-and-doors-delhi.webp"
+    },
+    {
+      "name": "Decorative Veneer",
+      "group": "Laminates & Edge Band",
+      "icon": "🪵",
+      "description": "Natural wood veneer sheets for premium doors, wardrobes and wall panelling.",
+      "image": "/images/laminates-and-plywood-section-delhi.webp"
     },
     {
       "name": "Sunmica & Laminates",
