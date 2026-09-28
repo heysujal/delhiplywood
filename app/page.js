@@ -31,6 +31,7 @@ import { FaGoogle, FaWhatsapp } from "react-icons/fa"
 import businessConfig from "@/config/business.json"
 import reviewsConfig from "@/config/reviews.json"
 import Link from "next/link"
+import Image from "next/image"
 
 // "Brands available" is derived from each product's brands in business.json,
 // grouped by product group, so there is one place to edit.
@@ -134,7 +135,7 @@ export default function HomePage() {
     trustBadges,
     areasServed,
     googleMapsLink,
-    logo,
+    logoIcon,
   } = businessConfig
 
   const yearsOfExperience = new Date().getFullYear() - parseInt(established)
@@ -172,7 +173,7 @@ export default function HomePage() {
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center gap-3">
               <img
-                src={logo}
+                src={logoIcon}
                 alt={`${businessName} logo`}
                 width={48}
                 height={48}
@@ -431,12 +432,12 @@ export default function HomePage() {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {product.image && (
-                  <img
+                  <Image
                     src={product.image}
                     alt={`${product.name} at ${businessName}, Delhi`}
                     width={600}
                     height={400}
-                    loading="lazy"
+                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                     className="w-full h-48 object-cover rounded-t-2xl"
                   />
                 )}
@@ -545,7 +546,7 @@ export default function HomePage() {
             <p className="inline-flex items-center gap-2 text-lg text-amber-800">
               <FaGoogle className="w-5 h-5" aria-hidden />
               <strong>{averageRating.toFixed(1)}</strong>
-              <span className="flex" aria-label={`${averageRating.toFixed(1)} out of 5 stars`}>
+              <span className="flex" role="img" aria-label={`${averageRating.toFixed(1)} out of 5 stars`}>
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" aria-hidden />
                 ))}
@@ -558,7 +559,7 @@ export default function HomePage() {
             {writtenReviews.map((review) => (
               <Card key={`${review.author}-${review.date}`}>
                 <CardContent className="p-6">
-                  <div className="flex gap-1 mb-3" aria-label={`${review.rating} out of 5 stars`}>
+                  <div className="flex gap-1 mb-3" role="img" aria-label={`${review.rating} out of 5 stars`}>
                     {[...Array(review.rating)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" aria-hidden />
                     ))}
@@ -698,13 +699,13 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {storePhotos.map((photo) => (
-              <img
+              <Image
                 key={photo.src}
                 src={photo.src}
                 alt={photo.alt}
                 width={600}
                 height={450}
-                loading="lazy"
+                sizes="(min-width: 768px) 33vw, 50vw"
                 className="w-full h-48 sm:h-64 object-cover rounded-2xl shadow-md"
               />
             ))}
@@ -814,7 +815,7 @@ export default function HomePage() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <img
-                  src={logo}
+                  src={logoIcon}
                   alt=""
                   width={40}
                   height={40}

@@ -6,8 +6,9 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // Let Vercel resize photos per card/screen instead of shipping 1200px files.
   images: {
-    unoptimized: true,
+    formats: ["image/avif", "image/webp"],
   },
 }
 
