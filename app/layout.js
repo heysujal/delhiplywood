@@ -91,6 +91,7 @@ const businessSchema = {
   telephone: phone,
   email,
   foundingDate: established,
+  founder: { "@type": "Person", name: businessConfig.owner.name },
   priceRange: "₹₹",
   currenciesAccepted: "INR",
   paymentAccepted: businessConfig.paymentMethods.join(", "),

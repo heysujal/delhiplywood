@@ -43,6 +43,15 @@
     }
   ],
   "established": "2000",
+  "owner": {
+    "name": "Shanker Lal Gupta",
+    "photo": "/images/nitin-plywood-house-owner-at-shop.webp"
+  },
+  "about": [
+    "Nitin Plywood House was started in 2000 by Shanker Lal Gupta on Main Narela Road in Alipur, Delhi. More than 25 years later he still runs the shop counter himself.",
+    "Today the shop stocks plywood in every grade, block board, MDF, HDHMR, WPC boards, doors, laminates, edge band, adhesives and furniture hardware, so a carpenter can get everything for a job in one trip.",
+    "Customers mostly come back for the advice: which grade to use where, how many sheets a kitchen or wardrobe needs, and how to get the best result within budget. Every order gets a GST bill, and we deliver across Delhi NCR."
+  ],
   "socialMedia": {
     "facebook": "",
     "instagram": ""

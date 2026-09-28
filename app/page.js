@@ -50,7 +50,7 @@ const formatMonthYear = (isoDate) => {
 const storePhotos = [
   { src: "/images/nitin-plywood-house-signboard-alipur-delhi.webp", alt: "Nitin Plywood House signboard on Main Narela Road, Alipur, Delhi" },
   { src: "/images/nitin-plywood-house-store-interior.webp", alt: "Inside Nitin Plywood House: hardware shelves, Fevicol and plywood" },
-  { src: "/images/nitin-plywood-house-owner-at-shop.webp", alt: "Customer counter at Nitin Plywood House, Alipur" },
+  { src: "/images/nitin-plywood-house-owner-at-shop.webp", alt: "Owner Shanker Lal Gupta at the Nitin Plywood House counter, Alipur" },
   { src: "/images/lee-perry-pine-plywood-delhi.webp", alt: "Lee Perry BWP and pine plywood sheets in stock" },
   { src: "/images/cabinet-handles-and-fevicol-display-delhi.webp", alt: "Cabinet handles display with Fevicol Marine and HeatX adhesives" },
   { src: "/images/edge-banding-tape-rolls-delhi.webp", alt: "Edge banding tape rolls in different colours" },
@@ -190,6 +190,9 @@ export default function HomePage() {
               <Link href="/renovation" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
                 Renovation
               </Link>
+              <Link href="/about" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
+                About
+              </Link>
               <a href="#contact" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
                 Contact
               </a>
@@ -253,6 +256,13 @@ export default function HomePage() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Renovation
+              </Link>
+              <Link
+                href="/about"
+                className="text-amber-900 font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                About
               </Link>
               <a
                 href="#contact"
@@ -837,6 +847,11 @@ export default function HomePage() {
                 <li>
                   <Link href="/renovation" className="hover:text-white transition-colors">
                     Renovation
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about" className="hover:text-white transition-colors">
+                    About Us
                   </Link>
                 </li>
                 <li>
