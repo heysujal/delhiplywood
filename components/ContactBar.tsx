@@ -67,7 +67,7 @@ export default function ContactBar() {
         target="_blank"
         rel="noopener noreferrer"
         data-cta="sticky_bar"
-        className={`${item} text-white bg-green-600`}
+        className={`${item} text-white bg-green-700`}
       >
         <FaWhatsapp className="w-5 h-5" aria-hidden />
         WhatsApp

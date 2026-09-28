@@ -56,10 +56,10 @@ export default function AboutPage() {
                 src={owner.photo}
                 alt={`${owner.name}, owner of ${businessName}, at the shop counter in Alipur`}
                 width={540}
-                height={1200}
+                height={675}
                 priority
                 sizes="(min-width: 768px) 40vw, 100vw"
-                className="w-full h-80 md:h-full object-cover"
+                className="w-full aspect-square md:aspect-auto md:h-full object-cover object-[50%_20%]"
               />
               <figcaption className="sr-only">
                 {owner.name} at the {businessName} counter
@@ -67,7 +67,7 @@ export default function AboutPage() {
             </figure>
 
             <div className="md:col-span-3 p-6 sm:p-10">
-              <p className="text-xs font-semibold uppercase tracking-wide text-amber-600 mb-2">
+              <p className="text-xs font-semibold uppercase tracking-wide text-amber-700 mb-2">
                 Since {established} · Alipur, Delhi
               </p>
               <h1 className="text-3xl sm:text-4xl font-bold text-amber-900 mb-6">About {businessName}</h1>
@@ -79,11 +79,11 @@ export default function AboutPage() {
 
               <dl className="grid grid-cols-2 gap-4 mt-8 text-sm">
                 <div className="rounded-xl bg-amber-50 p-4">
-                  <dt className="text-amber-600">Owner</dt>
+                  <dt className="text-amber-700">Owner</dt>
                   <dd className="font-semibold text-amber-900">{owner.name}</dd>
                 </div>
                 <div className="rounded-xl bg-amber-50 p-4">
-                  <dt className="text-amber-600">In business</dt>
+                  <dt className="text-amber-700">In business</dt>
                   <dd className="font-semibold text-amber-900">{years}+ years (since {established})</dd>
                 </div>
               </dl>

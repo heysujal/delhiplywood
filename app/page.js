@@ -1,21 +1,14 @@
-"use client"
-
-import { useState, useEffect } from "react"
 import {
   Phone,
-  MessageCircle,
   MapPin,
   Clock,
   Star,
   Award,
-  Users,
   Truck,
   CheckCircle2,
   Shield,
   IndianRupee,
   TrendingUp,
-  Menu,
-  X,
   ArrowRight,
   ChevronRight,
   Mail,
@@ -24,8 +17,6 @@ import {
   Package,
   Building2,
   BadgeCheck,
-  HeartHandshake,
-  Sparkles,
 } from "lucide-react"
 import { FaGoogle, FaWhatsapp } from "react-icons/fa"
 import businessConfig from "@/config/business.json"
@@ -33,6 +24,7 @@ import reviewsConfig from "@/config/reviews.json"
 import { products, productPath, brandsByGroup } from "@/lib/products"
 import Link from "next/link"
 import Image from "next/image"
+import HomeHeader from "@/components/HomeHeader"
 
 const brandGroups = brandsByGroup()
 
@@ -50,14 +42,14 @@ const formatMonthYear = (isoDate) => {
 const storePhotos = [
   { src: "/images/nitin-plywood-house-signboard-alipur-delhi.webp", alt: "Nitin Plywood House signboard on Main Narela Road, Alipur, Delhi" },
   { src: "/images/nitin-plywood-house-store-interior.webp", alt: "Inside Nitin Plywood House: hardware shelves, Fevicol and plywood" },
-  { src: "/images/nitin-plywood-house-owner-at-shop.webp", alt: "Owner Shanker Lal Gupta at the Nitin Plywood House counter, Alipur" },
+  { src: "/images/shanker-lal-gupta-owner-nitin-plywood-house.webp", alt: "Owner Shanker Lal Gupta at the Nitin Plywood House counter, Alipur", position: "object-[50%_25%]" },
   { src: "/images/lee-perry-pine-plywood-delhi.webp", alt: "Lee Perry BWP and pine plywood sheets in stock" },
   { src: "/images/cabinet-handles-and-fevicol-display-delhi.webp", alt: "Cabinet handles display with Fevicol Marine and HeatX adhesives" },
   { src: "/images/edge-banding-tape-rolls-delhi.webp", alt: "Edge banding tape rolls in different colours" },
 ]
 
-// Inline Button Component
-function Button({ children, className = "", onClick, variant = "default", size = "default", ...props }) {
+// Button-styled link (tel:, wa.me, Google), so there is no <button> nested in an <a>
+function ButtonLink({ children, className = "", variant = "default", size = "default", ...props }) {
   const baseStyles = "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg font-semibold transition-all duration-300 disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
   
   const variants = {
@@ -74,14 +66,15 @@ function Button({ children, className = "", onClick, variant = "default", size =
     icon: "h-11 w-11",
   }
   
+  const external = props.href?.startsWith("http")
   return (
-    <button
+    <a
       className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
-      onClick={onClick}
+      {...(external && { target: "_blank", rel: "noopener noreferrer" })}
       {...props}
     >
       {children}
-    </button>
+    </a>
   )
 }
 
@@ -106,9 +99,6 @@ function CardContent({ children, className = "", ...props }) {
 }
 
 export default function HomePage() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-
   const {
     businessName,
     tagline,
@@ -134,161 +124,10 @@ export default function HomePage() {
     "Hi! I'm interested in your plywood products. Please share more details and pricing."
   )}`
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
-    }
-
-    window.addEventListener("scroll", handleScroll, { passive: true })
-    handleScroll()
-
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-
-  const handleMap = () => {
-    window.open(googleMapsLink, "_blank")
-  }
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 overflow-x-hidden w-full">
 
-      {/* Header */}
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? "glass-effect shadow-lg border-b border-amber-200/50"
-            : "bg-transparent"
-        }`}
-      >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
-            <div className="flex items-center gap-3">
-              <img
-                src={logoIcon}
-                alt={`${businessName} logo`}
-                width={48}
-                height={48}
-                className="w-12 h-12 rounded-xl shadow-lg"
-              />
-              <div>
-                <p className="text-xl sm:text-2xl font-bold text-amber-900">{businessName}</p>
-                <p className="text-xs sm:text-sm text-amber-700 hidden sm:block">{tagline}</p>
-              </div>
-            </div>
-            
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-6">
-              <Link href="/products" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
-                Products
-              </Link>
-              <a href="#features" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
-                Why Us
-              </a>
-              <Link href="/blog" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
-                Blog
-              </Link>
-              <Link href="/renovation" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
-                Renovation
-              </Link>
-              <Link href="/about" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
-                About
-              </Link>
-              <a href="#contact" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
-                Contact
-              </a>
-            </nav>
-            
-            {/* Desktop CTA Buttons */}
-            <div className="hidden md:flex items-center gap-3">
-              <a href={`tel:${phone}`}>
-                <Button size="sm" variant="outline">
-                  <Phone className="w-4 h-4" />
-                  <span className="hidden lg:inline">Call</span>
-                </Button>
-              </a>
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                <Button size="sm">
-                  <FaWhatsapp className="w-4 h-4" />
-                  <span className="hidden lg:inline">WhatsApp</span>
-                </Button>
-              </a>
-            </div>
-            
-            {/* Mobile Menu Button */}
-            <button
-              className="md:hidden p-2 text-amber-900"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
-        </div>
-        
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="lg:hidden glass-effect border-t border-amber-200/50 animate-fade-in">
-            <div className="container mx-auto px-4 py-4 flex flex-col gap-3">
-              <Link
-                href="/products"
-                className="text-amber-900 font-medium py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Products
-              </Link>
-              <a
-                href="#features"
-                className="text-amber-900 font-medium py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Why Us
-              </a>
-              <Link
-                href="/blog"
-                className="text-amber-900 font-medium py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Blog
-              </Link>
-              <Link
-                href="/renovation"
-                className="text-amber-900 font-medium py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Renovation
-              </Link>
-              <Link
-                href="/about"
-                className="text-amber-900 font-medium py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                About
-              </Link>
-              <a
-                href="#contact"
-                className="text-amber-900 font-medium py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Contact
-              </a>
-              <div className="flex gap-3 pt-2">
-                <a href={`tel:${phone}`} className="flex-1">
-                  <Button size="sm" className="w-full">
-                    <Phone className="w-4 h-4" />
-                    Call
-                  </Button>
-                </a>
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex-1">
-                  <Button size="sm" className="w-full">
-                    <FaWhatsapp className="w-4 h-4" />
-                    WhatsApp
-                  </Button>
-                </a>
-              </div>
-            </div>
-          </div>
-        )}
-      </header>
+      <HomeHeader phone={phone} whatsappLink={whatsappLink} />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
@@ -303,9 +142,9 @@ export default function HomePage() {
               <span className="text-sm font-semibold text-amber-900">{yearsOfExperience}+ Years</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-[2rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance">
               <span className="text-amber-900">Plywood, Laminates &</span>
-              <br />
+              <br className="hidden sm:block" />{" "}
               <span className="gradient-text">Hardware Shop in Delhi</span>
             </h1>
             
@@ -327,21 +166,17 @@ export default function HomePage() {
             </div>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-              <a href={`tel:${phone}`}>
-                <Button size="lg" className="group">
-                  <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  Call {phone}
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </a>
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="group">
-                  <FaWhatsapp className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  WhatsApp Chat
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center pt-8 max-w-sm sm:max-w-none mx-auto">
+              <ButtonLink href={`tel:${phone}`} size="lg" className="group">
+                <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                Call {phone}
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </ButtonLink>
+              <ButtonLink href={whatsappLink} size="lg" variant="outline" className="group">
+                <FaWhatsapp className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                WhatsApp Chat
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </ButtonLink>
             </div>
             
             {/* Quick Features */}
@@ -438,6 +273,7 @@ export default function HomePage() {
                     width={600}
                     height={400}
                     sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    quality={60}
                     className="w-full h-48 object-cover rounded-t-2xl"
                   />
                 )}
@@ -586,19 +422,15 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href={allReviewsUrl} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="outline" className="group">
-                <FaGoogle className="w-5 h-5" />
-                See all reviews on Google
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </a>
-            <a href={writeReviewUrl} target="_blank" rel="noopener noreferrer">
-              <Button size="lg">
-                <Star className="w-5 h-5" />
-                Write a review
-              </Button>
-            </a>
+            <ButtonLink href={allReviewsUrl} size="lg" variant="outline" className="group">
+              <FaGoogle className="w-5 h-5" />
+              See all reviews on Google
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </ButtonLink>
+            <ButtonLink href={writeReviewUrl} size="lg">
+              <Star className="w-5 h-5" />
+              Write a review
+            </ButtonLink>
           </div>
         </div>
       </section>
@@ -673,18 +505,14 @@ export default function HomePage() {
             Call now for instant quotes, Delhi dispatch support, and Pan-India material supply guidance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href={`tel:${phone}`}>
-              <Button size="lg" variant="secondary" className="bg-white text-amber-900 hover:bg-amber-50">
-                <Phone className="w-5 h-5" />
-                Call {phone}
-              </Button>
-            </a>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="ghost" className="border-2 border-white text-white hover:bg-white/10">
-                <FaWhatsapp className="w-5 h-5" />
-                WhatsApp Now
-              </Button>
-            </a>
+            <ButtonLink href={`tel:${phone}`} size="lg" variant="secondary" className="bg-white text-amber-900 hover:bg-amber-50">
+              <Phone className="w-5 h-5" />
+              Call {phone}
+            </ButtonLink>
+            <ButtonLink href={whatsappLink} size="lg" variant="ghost" className="border-2 border-white text-white hover:bg-white/10">
+              <FaWhatsapp className="w-5 h-5" />
+              WhatsApp Now
+            </ButtonLink>
           </div>
         </div>
       </section>
@@ -709,7 +537,7 @@ export default function HomePage() {
                 width={600}
                 height={450}
                 sizes="(min-width: 768px) 33vw, 50vw"
-                className="w-full h-48 sm:h-64 object-cover rounded-2xl shadow-md"
+                className={`w-full h-48 sm:h-64 object-cover rounded-2xl shadow-md ${photo.position ?? ""}`}
               />
             ))}
           </div>
@@ -730,19 +558,21 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Address */}
-            <Card className="text-center hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer group" onClick={handleMap}>
+            <a href={googleMapsLink} target="_blank" rel="noopener noreferrer" className="block">
+            <Card className="h-full text-center hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer group">
               <CardContent className="p-6 sm:p-8">
                 <div className="w-14 h-14 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center mx-auto mb-4 text-white group-hover:scale-110 transition-transform duration-300 shadow-lg">
                   <MapPin className="w-7 h-7" />
                 </div>
                 <h3 className="font-bold text-lg text-amber-900 mb-3">Visit Our Store</h3>
                 <p className="text-amber-700 text-sm leading-relaxed mb-4">{address.full}</p>
-                <Button variant="ghost" size="sm" className="text-amber-600">
+                <span className="inline-flex items-center gap-2 text-sm font-semibold text-amber-700">
                   <Navigation className="w-4 h-4" />
                   Get Directions
-                </Button>
+                </span>
               </CardContent>
             </Card>
+            </a>
             
             {/* Hours */}
             <Card className="text-center hover:shadow-xl transition-all duration-300 hover:scale-105">
@@ -766,27 +596,25 @@ export default function HomePage() {
                   <Phone className="w-7 h-7" />
                 </div>
                 <h3 className="font-bold text-lg text-amber-900 mb-3">Contact Us</h3>
-                <div className="space-y-3 text-amber-700 text-sm flex items-center flex-col">
-                  <a href={`tel:${phone}`} className="flex items-center justify-center gap-2 text-amber-900 hover:text-amber-600 font-semibold transition-colors">
+                <div className="space-y-1 text-amber-700 text-sm flex items-center flex-col">
+                  <a href={`tel:${phone}`} className="flex items-center justify-center gap-2 py-1.5 text-amber-900 hover:text-amber-600 font-semibold transition-colors">
                     <Phone className="w-4 h-4" />
                     {phone}
                   </a>
                   {alternatePhone && (
-                    <a href={`tel:${alternatePhone}`} className="flex items-center justify-center gap-2 text-amber-900 hover:text-amber-600 font-semibold transition-colors">
+                    <a href={`tel:${alternatePhone}`} className="flex items-center justify-center gap-2 py-1.5 text-amber-900 hover:text-amber-600 font-semibold transition-colors">
                       <Phone className="w-4 h-4" />
                       {alternatePhone}
                     </a>
                   )}
-                  <a href={`mailto:${email}`} className="flex items-center justify-center gap-2 text-amber-900 hover:text-amber-600 font-semibold transition-colors">
+                  <a href={`mailto:${email}`} className="flex items-center justify-center gap-2 py-1.5 text-amber-900 hover:text-amber-600 font-semibold transition-colors">
                     <Mail className="w-4 h-4" />
                     {email}
                   </a>
-                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                    <Button size="sm" variant="outline" className="mt-2">
-                      <FaWhatsapp className="w-4 h-4" />
-                      WhatsApp
-                    </Button>
-                  </a>
+                  <ButtonLink href={whatsappLink} size="sm" variant="outline" className="mt-2">
+                    <FaWhatsapp className="w-4 h-4" />
+                    WhatsApp
+                  </ButtonLink>
                 </div>
               </CardContent>
             </Card>
@@ -817,7 +645,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <img
+                <Image
                   src={logoIcon}
                   alt=""
                   width={40}

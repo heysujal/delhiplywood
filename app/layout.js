@@ -1,10 +1,19 @@
-import { GeistSans } from "geist/font/sans"
+import localFont from "next/font/local"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import businessConfig from "@/config/business.json"
 import { products, productPath } from "@/lib/products"
 import ContactBar from "@/components/ContactBar"
 import Script from 'next/script'
+
+// Geist (weights 400-800), cut down to Latin + ₹ with fonttools: 23 KB instead
+// of the geist package's 70 KB full font, which loads before the first paint.
+const geistSans = localFont({
+  src: "./fonts/geist-latin.woff2",
+  weight: "400 800",
+  variable: "--font-geist-sans",
+  display: "swap",
+})
 
 const { businessName, tagline, phone, alternatePhone, email, address, geo, established } = businessConfig
 
@@ -178,7 +187,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
-      <body className={`font-sans ${GeistSans.variable} antialiased pb-16 md:pb-0`}>
+      <body className={`font-sans ${geistSans.variable} antialiased pb-16 md:pb-0`}>
         {children}
         <ContactBar />
         <Analytics />
