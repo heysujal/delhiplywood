@@ -4,7 +4,7 @@ import type { BlogPost } from "@/lib/blog"
 export default function BlogCard({ post }: { post: BlogPost }) {
   const { slug, frontmatter } = post
   return (
-    <article className="bg-white/90 backdrop-blur-sm rounded-2xl border border-amber-100/50 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+    <article className="bg-white/90 rounded-2xl border border-amber-100/50 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
       <div className="p-6 sm:p-8">
         <p className="text-xs font-semibold uppercase tracking-wide text-amber-600 mb-2">
           {new Date(frontmatter.date).toLocaleDateString("en-IN", {

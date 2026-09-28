@@ -1,9 +1,7 @@
 import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import businessConfig from "@/config/business.json"
-import { Suspense } from "react"
 import Script from 'next/script'
 
 const { businessName, tagline, phone, alternatePhone, email, address, geo, established } = businessConfig
@@ -176,16 +174,16 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
-        <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+      <body className={`font-sans ${GeistSans.variable} antialiased`}>
+        {children}
         <Analytics />
         {/* Google tag */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-ESXN3N85E5"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
 
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

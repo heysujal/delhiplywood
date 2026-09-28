@@ -14,7 +14,7 @@ export default function BlogPost({
   tags: string[]
 }) {
   return (
-    <article className="bg-white/95 backdrop-blur rounded-2xl border border-amber-100/60 shadow-lg p-6 sm:p-10">
+    <article className="bg-white rounded-2xl border border-amber-100/60 shadow-lg p-6 sm:p-10">
       <header className="mb-6">
         <p className="text-xs font-semibold uppercase tracking-wide text-amber-600 mb-2">
           {new Date(date).toLocaleDateString("en-IN", {
