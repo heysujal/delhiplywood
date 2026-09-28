@@ -3,6 +3,7 @@ import path from "path"
 import matter from "gray-matter"
 import { remark } from "remark"
 import html from "remark-html"
+import gfm from "remark-gfm"
 
 export type BlogFrontmatter = {
   title: string
@@ -57,7 +58,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     readTime: data.readTime || "5 min read",
   } as BlogFrontmatter
 
-  const processedContent = remark().use(html).processSync(content)
+  const processedContent = remark().use(gfm).use(html).processSync(content)
   const contentHtml = processedContent.toString()
 
   return {
