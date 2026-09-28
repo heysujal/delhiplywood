@@ -26,3 +26,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.
 prompt.md
+# Private exports (Google Takeout, Search Console) - never commit
+Takeout/
+delhiplywood.com-*/
+.DS_Store
