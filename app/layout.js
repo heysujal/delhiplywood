@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import businessConfig from "@/config/business.json"
 import { products, productPath } from "@/lib/products"
+import ContactBar from "@/components/ContactBar"
 import Script from 'next/script'
 
 const { businessName, tagline, phone, alternatePhone, email, address, geo, established } = businessConfig
@@ -176,8 +177,9 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
-      <body className={`font-sans ${GeistSans.variable} antialiased`}>
+      <body className={`font-sans ${GeistSans.variable} antialiased pb-16 md:pb-0`}>
         {children}
+        <ContactBar />
         <Analytics />
         {/* Google tag */}
         <Script
@@ -185,7 +187,9 @@ export default function RootLayout({ children }) {
           strategy="lazyOnload"
         />
 
-        <Script id="google-analytics" strategy="lazyOnload">
+        {/* The tiny gtag() queue runs early so click events are never lost;
+            the gtag.js library itself still loads lazily and drains the queue. */}
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

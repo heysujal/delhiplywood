@@ -172,7 +172,7 @@ export default function BlogPostPage({ params }: Props) {
           href="https://wa.me/919212017608"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 z-40 inline-flex items-center justify-center w-14 h-14 rounded-full bg-green-500 text-white shadow-xl hover:bg-green-600 transition-colors"
+          className="fixed bottom-6 right-6 z-40 hidden md:inline-flex items-center justify-center w-14 h-14 rounded-full bg-green-500 text-white shadow-xl hover:bg-green-600 transition-colors"
           aria-label="WhatsApp chat Nitin Plywood House"
         >
           💬
