@@ -143,6 +143,10 @@ export default function HomePage() {
             </div>
             
             <h1 className="text-[2rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance">
+              <span className="block text-xl sm:text-2xl md:text-3xl font-semibold text-amber-700 mb-3">
+                {businessName}
+                <span className="sr-only">:</span>
+              </span>
               <span className="text-amber-900">Plywood, Laminates &</span>
               <br className="hidden sm:block" />{" "}
               <span className="gradient-text">Hardware Shop in Delhi</span>
