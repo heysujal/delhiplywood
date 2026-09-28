@@ -79,9 +79,11 @@ export const metadata = {
     creator: `@${businessConfig.businessName.replace(/\s+/g, "")}`,
   },
   
-  // Canonical URL
+  // Each page resolves its own canonical ("./" = the current path), so inner
+  // pages never point back at the homepage.
+  metadataBase: new URL(baseUrl),
   alternates: {
-    canonical: baseUrl,
+    canonical: "./",
   },
   
   // Additional meta tags for SEO
@@ -137,9 +139,6 @@ export default function RootLayout({ children }) {
         
         {/* Manifest (if you have one) */}
         <link rel="manifest" href="/site.webmanifest" />
-        
-        {/* Canonical URL */}
-        <link rel="canonical" href={baseUrl} />
         
         {/* Geographic Meta Tags */}
         <meta name="geo.region" content="IN-DL" />
