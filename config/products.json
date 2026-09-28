@@ -1,0 +1,597 @@
+{
+  "groups": [
+    "Plywood & Boards",
+    "Laminates & Edge Band",
+    "Adhesives",
+    "Hardware & Tools"
+  ],
+  "products": [
+    {
+      "slug": "bwp-marine-plywood",
+      "name": "BWP & Marine Plywood",
+      "group": "Plywood & Boards",
+      "icon": "🚢",
+      "summary": "Boiling Water Proof plywood for kitchens, bathroom vanities and other wet areas.",
+      "intro": "BWP (Boiling Water Proof) plywood is bonded with phenol-formaldehyde resin, so the layers stay together even after long exposure to water. Marine-grade sheets follow IS:710. It is the safest choice for sink cabinets, bathroom vanities and any furniture that will face regular moisture.",
+      "grade": "BWP / Marine (IS:710)",
+      "thickness": "6mm - 25mm",
+      "sizes": "8x4 ft standard; ask for other sizes",
+      "brands": ["Lee Perry", "Goldberg"],
+      "image": "/images/lee-perry-pine-plywood-delhi.webp",
+      "uses": [
+        "Kitchen sink and under-counter cabinets",
+        "Bathroom vanities and wash-basin units",
+        "Balcony and utility-area storage",
+        "Furniture in damp or ground-floor rooms"
+      ],
+      "howToChoose": [
+        "Check the IS:710 or BWP stamp printed on the sheet face.",
+        "Use 18mm or 19mm for cabinet carcass and 6mm to 9mm for back panels.",
+        "Look for a full-core sheet (hardwood in every layer) where strength matters most.",
+        "BWP costs more than BWR, so use it where water actually reaches and BWR elsewhere."
+      ],
+      "faqs": [
+        {
+          "q": "Is BWP plywood the same as marine plywood?",
+          "a": "Marine plywood is BWP plywood made to the stricter IS:710 standard, with better veneers and tighter core gaps. All marine plywood is BWP, but not every BWP sheet is marine grade."
+        },
+        {
+          "q": "Which thickness of BWP plywood is best for a kitchen?",
+          "a": "18mm or 19mm for the cabinet box and shelves, and 6mm to 9mm for back panels. Under the sink, use BWP for every part of the cabinet."
+        }
+      ]
+    },
+    {
+      "slug": "bwr-plywood",
+      "name": "BWR Plywood",
+      "group": "Plywood & Boards",
+      "icon": "💧",
+      "summary": "Boiling Water Resistant plywood for modular kitchens, wardrobes and high-moisture areas.",
+      "intro": "BWR (Boiling Water Resistant) plywood handles humidity and occasional splashes better than MR (commercial) plywood, at a lower price than BWP. It is the most common choice for modular kitchens away from the sink, wardrobes and TV units in Delhi homes.",
+      "grade": "BWR / MR (IS:303)",
+      "thickness": "6mm - 25mm",
+      "sizes": "8x4 ft standard; ask for other sizes",
+      "brands": ["Dawar", "Engpar", "Goldberg"],
+      "image": "/images/bwr-plywood-high-solid-resin-delhi.webp",
+      "uses": [
+        "Modular kitchen cabinets away from the sink",
+        "Wardrobes and lofts",
+        "TV units, study tables and beds",
+        "Office furniture"
+      ],
+      "howToChoose": [
+        "Look for the IS:303 mark and the BWR grade printed on the face.",
+        "Choose MR grade only for dry rooms; choose BWR for kitchens and bathrooms-adjacent walls.",
+        "Check the edges: a solid core without gaps or overlaps holds screws better.",
+        "Ask about the brand's warranty; many BWR sheets carry 15 to 25 years."
+      ],
+      "faqs": [
+        {
+          "q": "What is the difference between BWR and MR plywood?",
+          "a": "MR (moisture resistant) plywood is meant for dry interiors. BWR uses a stronger resin that tolerates humidity and splashes, which makes it better for kitchens and wardrobes on outer walls."
+        },
+        {
+          "q": "Can I use BWR plywood under the kitchen sink?",
+          "a": "It will survive occasional splashes, but for the sink cabinet itself BWP is the safer choice because leaks there are constant."
+        }
+      ]
+    },
+    {
+      "slug": "gurjan-plywood",
+      "name": "Gurjan Plywood",
+      "group": "Plywood & Boards",
+      "icon": "🪵",
+      "summary": "100% Gurjan face plywood in triple core and alternate core for strong, long-lasting furniture.",
+      "intro": "Gurjan is a dense hardwood, and plywood with a Gurjan face veneer is known for strength, good screw holding and a smooth surface for laminate or polish. We stock full-core, triple-core and alternate-core Gurjan sheets so you can match strength to budget.",
+      "grade": "Gurjan face; full, triple or alternate core",
+      "thickness": "6mm - 25mm",
+      "sizes": "8x4 ft standard; ask for other sizes",
+      "brands": ["DP Plus", "Tanishka", "Brownply"],
+      "image": "/images/gurjan-plywood-delhi.webp",
+      "uses": [
+        "Beds, wardrobes and storage units",
+        "Kitchen carcass (in BWR/BWP grade)",
+        "Shop fittings and office furniture",
+        "Doors and heavy-use shelves"
+      ],
+      "howToChoose": [
+        "Full-core plywood has hardwood in every layer and is the strongest.",
+        "Alternate-core mixes hardwood with lighter layers to lower the price for less demanding furniture.",
+        "Check the face: it should be one smooth Gurjan veneer without patches.",
+        "Pick the grade (MR, BWR or BWP) for where the furniture will go."
+      ],
+      "faqs": [
+        {
+          "q": "Is Gurjan plywood better than pine plywood?",
+          "a": "Gurjan is denser and stronger, with better screw holding, so it suits heavy-use furniture. Pine is lighter and usually cheaper, which is useful where weight matters."
+        },
+        {
+          "q": "What does 'triple core' or 'alternate core' mean?",
+          "a": "They describe the inner layers. Full or triple core uses hardwood throughout for strength; alternate core mixes hardwood and softer layers to save cost."
+        }
+      ]
+    },
+    {
+      "slug": "meranti-plywood",
+      "name": "Meranti Plywood",
+      "group": "Plywood & Boards",
+      "icon": "🌳",
+      "summary": "Meranti face plywood for kitchens, wardrobes and interior furniture.",
+      "intro": "Meranti plywood has a reddish hardwood face with a fine, even grain that takes polish and laminate well. It is a popular choice for kitchens and wardrobes when you want a good-looking, stable sheet at a moderate price.",
+      "grade": "BWR Grade",
+      "thickness": "6mm - 25mm",
+      "sizes": "8x4 ft standard; ask for other sizes",
+      "brands": ["Dawar"],
+      "image": "/images/bwr-plywood-sheets-delhi.webp",
+      "uses": [
+        "Modular kitchen cabinets",
+        "Wardrobes and shutters",
+        "Wall panelling with polish",
+        "General interior furniture"
+      ],
+      "howToChoose": [
+        "Choose BWR grade for kitchens and wardrobes on outer walls.",
+        "Check that the face veneer is even in colour if you plan to polish it.",
+        "Use 18mm or 19mm for carcass and shutters."
+      ],
+      "faqs": [
+        {
+          "q": "Is Meranti plywood waterproof?",
+          "a": "Meranti describes the face wood, not the water resistance. Water resistance depends on the grade: MR, BWR or BWP. Our Meranti stock is BWR grade."
+        },
+        {
+          "q": "Can Meranti plywood be polished instead of laminated?",
+          "a": "Yes. Its fine grain takes melamine or PU polish well, which is why it is used for exposed panels."
+        }
+      ]
+    },
+    {
+      "slug": "pine-plywood",
+      "name": "Pine Plywood",
+      "group": "Plywood & Boards",
+      "icon": "🌲",
+      "summary": "Pine plywood for furniture, paneling and interior applications.",
+      "intro": "Pine plywood is lighter than hardwood plywood and usually more affordable, which makes it a practical choice for furniture where weight and budget matter. We stock pine sheets in MR and BWP grades.",
+      "grade": "MR / BWP",
+      "thickness": "6mm - 19mm",
+      "sizes": "8x4 ft standard; ask for other sizes",
+      "brands": ["Lee Perry"],
+      "image": "/images/lee-perry-pine-plywood-delhi.webp",
+      "uses": [
+        "Lightweight furniture and lofts",
+        "Wall paneling and false-ceiling frames",
+        "Budget wardrobes and storage",
+        "Packing and site work"
+      ],
+      "howToChoose": [
+        "Pick BWP-grade pine where moisture is expected.",
+        "For heavy shelves or beds, consider Gurjan plywood for better screw holding.",
+        "Check the sheet is flat and the edges have no hollow gaps."
+      ],
+      "faqs": [
+        {
+          "q": "Why choose pine plywood?",
+          "a": "It is lighter and usually cheaper than hardwood plywood, which suits lofts, paneling and furniture that does not carry heavy loads."
+        },
+        {
+          "q": "Is pine plywood good for a kitchen?",
+          "a": "Only in BWP grade and ideally for low-load parts. For the main kitchen carcass most carpenters prefer BWR or BWP hardwood plywood."
+        }
+      ]
+    },
+    {
+      "slug": "block-board",
+      "name": "Block Board",
+      "group": "Plywood & Boards",
+      "icon": "🧱",
+      "summary": "Block board for long shelves, beds and doors where sheets must stay straight.",
+      "intro": "Block board has a core of solid wood strips sandwiched between veneers. It stays straight over long spans, so it is the usual choice for long shelves, bed panels, table tops and doors, where plywood of the same thickness might sag.",
+      "thickness": "19mm, 22mm, 25mm",
+      "sizes": "8x4 ft standard; ask for other sizes",
+      "brands": ["Awani", "Dawar", "Goldberg"],
+      "image": "/images/dp-plus-plywood-and-awani-block-board-delhi.webp",
+      "uses": [
+        "Long shelves and bookcases",
+        "Bed panels and headboards",
+        "Table tops and counters",
+        "Doors and partitions"
+      ],
+      "howToChoose": [
+        "Use block board for spans longer than about 3 feet where sagging is a concern.",
+        "Avoid it in wet areas; use BWP plywood there instead.",
+        "Screws hold best along the direction of the core strips, so plan joints with your carpenter."
+      ],
+      "faqs": [
+        {
+          "q": "Block board or plywood: which is better?",
+          "a": "Block board is better for long, straight spans such as shelves and beds. Plywood is better for kitchens, wet areas and places that need strong screw holding in every direction."
+        },
+        {
+          "q": "Is block board waterproof?",
+          "a": "No. Its solid wood core can swell with water, so keep it for dry rooms."
+        }
+      ]
+    },
+    {
+      "slug": "mdf-board",
+      "name": "MDF Boards",
+      "group": "Plywood & Boards",
+      "icon": "📋",
+      "summary": "Medium Density Fiberboard for smooth finishing, CNC designs and wardrobe shutters.",
+      "intro": "MDF (Medium Density Fiberboard) is made from fine wood fibres pressed into a flat, smooth board with no grain. It paints beautifully and cuts cleanly on CNC machines, which makes it ideal for designer shutters, wall panels and decorative work.",
+      "grade": "Plain and pre-laminated",
+      "thickness": "6mm - 25mm",
+      "sizes": "8x4 ft standard; ask for other sizes",
+      "image": "/images/coloured-edge-boards-mdf-delhi.webp",
+      "uses": [
+        "Wardrobe and kitchen shutters with PU or paint",
+        "CNC jaali and wall panels",
+        "TV units and display furniture",
+        "Office furniture"
+      ],
+      "howToChoose": [
+        "Use MDF for shutters and decorative parts, and plywood for the carcass.",
+        "Keep plain MDF away from water; choose HDHMR for moisture-prone areas.",
+        "Pre-laminated MDF saves time when you want a ready finish."
+      ],
+      "faqs": [
+        {
+          "q": "MDF or plywood for furniture?",
+          "a": "Plywood is stronger and handles moisture better, so it suits the carcass. MDF gives a smoother finish for shutters, paint and CNC designs. Many carpenters combine both."
+        },
+        {
+          "q": "Does MDF get damaged by water?",
+          "a": "Yes, plain MDF swells when wet. Seal all edges, or use HDHMR board in kitchens and bathrooms."
+        }
+      ]
+    },
+    {
+      "slug": "hdhmr-board",
+      "name": "HDMR / HDHMR Boards",
+      "group": "Plywood & Boards",
+      "icon": "🪵",
+      "summary": "High Density (High) Moisture Resistant boards for kitchen and wardrobe shutters and CNC work.",
+      "intro": "HDHMR (High Density High Moisture Resistant) board is a denser, more moisture-resistant alternative to MDF. It keeps MDF's smooth, grain-free surface for CNC and shutters, while holding screws better and handling kitchen humidity. Action TESA is the best-known brand.",
+      "grade": "HDMR / HDHMR",
+      "thickness": "16mm - 25mm",
+      "sizes": "8x4 ft standard; ask for other sizes",
+      "brands": ["Action TESA"],
+      "image": "/images/plywood-and-board-stack-delhi.webp",
+      "uses": [
+        "Kitchen and wardrobe shutters",
+        "CNC-cut designs and wall panels",
+        "Modular furniture carcass",
+        "Office and shop fittings"
+      ],
+      "howToChoose": [
+        "Choose HDHMR over MDF for kitchens and humid rooms.",
+        "It is moisture resistant, not waterproof: seal the edges with edge band tape.",
+        "Use proper HDHMR screws and pre-drill for the best hold."
+      ],
+      "faqs": [
+        {
+          "q": "HDHMR or plywood for a kitchen?",
+          "a": "HDHMR gives a smoother finish and is good for shutters and CNC work. Plywood (BWR/BWP) is still preferred for the sink area and heavy-load carcass."
+        },
+        {
+          "q": "Is HDMR the same as HDHMR?",
+          "a": "The terms are used for the same kind of high-density moisture-resistant board. HDHMR is the name Action TESA uses."
+        }
+      ]
+    },
+    {
+      "slug": "wpc-pvc-board",
+      "name": "WPC & PVC Boards",
+      "group": "Plywood & Boards",
+      "icon": "🧊",
+      "summary": "Waterproof, termite-proof WPC and PVC boards for bathrooms, kitchens and outdoor use.",
+      "intro": "WPC (Wood Plastic Composite) and PVC boards do not absorb water and are not attacked by termites, so they last in places where wood-based boards fail. They can be cut, screwed and laminated with regular carpentry tools.",
+      "grade": "WPC and PVC",
+      "sizes": "8x4 ft standard; ask for other sizes",
+      "brands": ["Mysta"],
+      "image": "/images/wpc-pvc-boards-and-doors-delhi.webp",
+      "uses": [
+        "Bathroom vanities and cabinets",
+        "Under-sink kitchen cabinets",
+        "Balcony and outdoor storage",
+        "Partitions in damp areas"
+      ],
+      "howToChoose": [
+        "Use WPC where water contact is constant, such as under the sink.",
+        "WPC is heavier and stiffer than PVC board; PVC is lighter for low-load panels.",
+        "Use screws and adhesive recommended for WPC for a lasting joint."
+      ],
+      "faqs": [
+        {
+          "q": "Is WPC board better than BWP plywood for bathrooms?",
+          "a": "WPC does not absorb water at all and is termite-proof, so in bathrooms and under sinks it usually outlasts plywood. Plywood is still stronger for heavy-load furniture."
+        },
+        {
+          "q": "Can WPC board be laminated?",
+          "a": "Yes, laminates and edge band tape can be applied with a suitable adhesive."
+        }
+      ]
+    },
+    {
+      "slug": "flush-doors",
+      "name": "Flush Doors & WPC Doors",
+      "group": "Plywood & Boards",
+      "icon": "🚪",
+      "summary": "Flush doors, laminated doors and waterproof WPC doors for homes and offices.",
+      "intro": "Flush doors have a flat face over a solid or block-board core, ready for veneer, laminate or paint. For bathrooms we also stock waterproof WPC doors, which do not swell or rot in wet areas.",
+      "thickness": "30mm - 35mm",
+      "sizes": "Standard door sizes; ask for custom sizes",
+      "brands": ["Dawar", "Lee Perry", "Goldberg", "Mysta"],
+      "image": "/images/wpc-pvc-boards-and-doors-delhi.webp",
+      "uses": [
+        "Bedroom and main doors",
+        "Bathroom doors (WPC)",
+        "Office cabins",
+        "Shop and store rooms"
+      ],
+      "howToChoose": [
+        "Use 32mm or 35mm solid-core doors for main and bedroom doors.",
+        "Choose WPC doors for bathrooms to avoid swelling.",
+        "Decide the finish first: veneer for polish, or plain for laminate."
+      ],
+      "faqs": [
+        {
+          "q": "Which door is best for a bathroom?",
+          "a": "A WPC door. It is waterproof and termite-proof, while wooden flush doors can swell at the bottom in wet bathrooms."
+        },
+        {
+          "q": "What thickness should a flush door be?",
+          "a": "30mm is common for internal doors; 32mm to 35mm solid-core doors feel sturdier and suit main and bedroom doors."
+        }
+      ]
+    },
+    {
+      "slug": "decorative-veneer",
+      "name": "Decorative Veneer",
+      "group": "Laminates & Edge Band",
+      "icon": "🪵",
+      "summary": "Natural wood veneer sheets for premium doors, wardrobes and wall panelling.",
+      "intro": "Veneer is a thin slice of real wood pasted onto plywood or MDF. After polishing it shows natural grain and colour, giving furniture a premium, solid-wood look at a fraction of the cost.",
+      "image": "/images/laminates-and-plywood-section-delhi.webp",
+      "uses": [
+        "Wardrobe shutters and doors",
+        "Wall panelling and TV walls",
+        "Office cabins and reception desks"
+      ],
+      "howToChoose": [
+        "Select the actual sheets in person: grain and shade vary from sheet to sheet.",
+        "Plan enough sheets from the same lot so the panels match.",
+        "Veneer needs polish (PU or melamine) after pasting."
+      ],
+      "faqs": [
+        {
+          "q": "Veneer or laminate: which is better?",
+          "a": "Veneer is real wood and looks richer after polish, but needs finishing and care. Laminate is tougher, ready-finished and easier to maintain."
+        },
+        {
+          "q": "Can I see veneer samples before buying?",
+          "a": "Yes, visit our Alipur store to see the sheets in person before you decide."
+        }
+      ]
+    },
+    {
+      "slug": "sunmica-laminates",
+      "name": "Sunmica & Laminates",
+      "group": "Laminates & Edge Band",
+      "icon": "✨",
+      "summary": "Decorative laminates and sunmica sheets, with catalogues to choose shades in store.",
+      "intro": "Decorative laminates (commonly called sunmica) are the durable, ready-finished top layer on kitchens, wardrobes and tables. Choose from catalogues of solid colours, wood grains, textures and high-gloss finishes at our store.",
+      "thickness": "0.8mm - 1.5mm",
+      "sizes": "8x4 ft sheets",
+      "brands": ["Greenlam", "Merino", "Century"],
+      "image": "/images/laminates-and-plywood-section-delhi.webp",
+      "uses": [
+        "Kitchen and wardrobe shutters",
+        "Table and counter tops",
+        "Wall panelling",
+        "Inside of cabinets (liner laminate)"
+      ],
+      "howToChoose": [
+        "Use 1mm or thicker laminate on shutters and tops; 0.8mm liner inside cabinets.",
+        "Matt and textured finishes hide fingerprints better than high gloss.",
+        "Buy matching edge band tape at the same time."
+      ],
+      "faqs": [
+        {
+          "q": "Is sunmica the same as laminate?",
+          "a": "Yes. Sunmica was a brand name that became the common word for decorative laminate sheets."
+        },
+        {
+          "q": "Which laminate thickness is best for a kitchen?",
+          "a": "1mm for shutters and exposed surfaces, and 0.8mm liner laminate for the inside of cabinets."
+        }
+      ]
+    },
+    {
+      "slug": "pvc-edge-band-tape",
+      "name": "PVC Edge Band Tape",
+      "group": "Laminates & Edge Band",
+      "icon": "🎞️",
+      "summary": "PVC edge band tape in solid, wood, marble and high-gloss finishes to match your laminate.",
+      "intro": "Edge band tape covers the raw edges of plywood, MDF and HDHMR. It gives a clean finish and, just as importantly, seals the edge against moisture. We stock many shades so you can match your laminate.",
+      "thickness": "0.8mm x 22mm and more",
+      "brands": ["aldo"],
+      "image": "/images/edge-banding-tape-rolls-delhi.webp",
+      "uses": [
+        "Shutter and shelf edges",
+        "Kitchen and wardrobe carcass edges",
+        "Table and desk edges"
+      ],
+      "howToChoose": [
+        "Bring a laminate sample or shade number to match the colour.",
+        "Pick a width slightly wider than the board thickness.",
+        "Use thicker edge band on edges that get knocked often."
+      ],
+      "faqs": [
+        {
+          "q": "Why is edge banding important?",
+          "a": "Besides looking neat, it seals the board edge so moisture cannot get in and cause swelling."
+        },
+        {
+          "q": "Can edge band be applied without a machine?",
+          "a": "Yes, carpenters often apply it with a suitable adhesive by hand, though an edge banding machine gives the neatest finish."
+        }
+      ]
+    },
+    {
+      "slug": "fevicol-adhesives",
+      "name": "Fevicol & Adhesives",
+      "group": "Adhesives",
+      "icon": "🔗",
+      "summary": "Wood, laminate and PVC adhesives for strong, lasting bonds.",
+      "intro": "The right adhesive decides how long your furniture lasts. We stock Fevicol's range, from waterproof Marine and heat-resistant HeatX to ProBond for acrylic and PVC sheets, along with Asian Paints Trugrip and Masterlok.",
+      "range": "Fevicol Marine, HeatX, ProBond, SH, Hi-Per",
+      "brands": ["Fevicol", "Asian Paints Trugrip", "Masterlok"],
+      "image": "/images/fevicol-probond-adhesive-delhi.webp",
+      "uses": [
+        "Pasting laminate on plywood",
+        "Wood joinery",
+        "Kitchen and bathroom furniture (waterproof adhesive)",
+        "Acrylic and PVC sheet work"
+      ],
+      "howToChoose": [
+        "Fevicol Marine for kitchens, bathrooms and anything near water.",
+        "Fevicol HeatX for laminate near stoves and hot areas.",
+        "Fevicol ProBond for acrylic and PVC sheets.",
+        "Fevicol SH for general woodwork in dry areas."
+      ],
+      "faqs": [
+        {
+          "q": "Which Fevicol is waterproof?",
+          "a": "Fevicol Marine is the waterproof adhesive in the range, meant for kitchens, bathrooms and other wet areas."
+        },
+        {
+          "q": "Do you sell adhesives in bulk?",
+          "a": "Yes, we keep retail tubs and wholesale boxes. Call us for bulk quantities."
+        }
+      ]
+    },
+    {
+      "slug": "cabinet-hardware",
+      "name": "Cabinet & Furniture Hardware",
+      "group": "Hardware & Tools",
+      "icon": "🔧",
+      "summary": "Handles, hinges, telescopic channels, sofa legs, locks, tower bolts and aldrops.",
+      "intro": "Get all the fittings for your furniture from the same shop as your plywood: handles, hinges, drawer channels, sofa legs, locks, tower bolts and aldrops, so sizes and finishes match and your carpenter doesn't wait.",
+      "categories": "Handles, Hinges, Channels, Sofa Legs, Locks",
+      "brands": ["Platina", "Unimass", "Famous", "Helson", "Skylux", "SBT"],
+      "image": "/images/cabinet-handles-and-fevicol-display-delhi.webp",
+      "uses": [
+        "Kitchen and wardrobe shutters",
+        "Drawers and pull-outs",
+        "Sofas and beds",
+        "Doors and windows"
+      ],
+      "howToChoose": [
+        "Soft-close hinges and channels cost more but protect shutters and drawers.",
+        "Match drawer channel length to the drawer depth.",
+        "Pick handle finishes to match other fittings in the room."
+      ],
+      "faqs": [
+        {
+          "q": "Do you stock soft-close hinges and telescopic channels?",
+          "a": "Yes, we stock hinges and telescopic drawer channels in several sizes. Call to check a specific size."
+        },
+        {
+          "q": "Can I buy hardware together with plywood?",
+          "a": "Yes. Buying plywood, laminate, adhesive and hardware together means one trip and one delivery."
+        }
+      ]
+    },
+    {
+      "slug": "tools-consumables",
+      "name": "Tools & Consumables",
+      "group": "Hardware & Tools",
+      "icon": "🪚",
+      "summary": "Saw blades, drill bits, sandpaper, screws, nails and wall plugs for carpenters.",
+      "intro": "Everyday carpentry consumables, from TCT saw blades and drill bits to sandpaper, screws, nails and wall plugs, stocked alongside the materials they are used on.",
+      "categories": "Saw Blades, Drill Bits, Sandpaper, Screws, Nails",
+      "brands": ["Tayal", "Plumax", "Xtra-Power"],
+      "image": "/images/hardware-fittings-shelves-delhi.webp",
+      "uses": [
+        "Cutting plywood and laminate",
+        "Drilling and fixing",
+        "Sanding before polish",
+        "Site and workshop supplies"
+      ],
+      "howToChoose": [
+        "Use TCT blades for laminated boards to avoid chipping.",
+        "Choose screw length about 2.5 times the thickness of the board being fixed.",
+        "Velcro sandpaper suits orbital sanders; sheets suit hand sanding."
+      ],
+      "faqs": [
+        {
+          "q": "Do you sell screws and nails loose or in boxes?",
+          "a": "Both. Ask at the counter or call us with the size you need."
+        },
+        {
+          "q": "Which saw blade is best for laminated boards?",
+          "a": "A fine-tooth TCT blade gives a clean cut with less chipping on laminate."
+        }
+      ]
+    },
+    {
+      "slug": "timber-battens",
+      "name": "Timber & Battens",
+      "group": "Plywood & Boards",
+      "icon": "🪵",
+      "summary": "Wooden battens, beams and strips for frames, beading and support work.",
+      "intro": "Wooden battens and strips are used for furniture frames, beading, wall and ceiling frames and support work. We stock them in common sizes alongside plywood so your carpenter gets everything in one trip.",
+      "image": "/images/timber-battens-delhi.webp",
+      "uses": [
+        "Furniture and bed frames",
+        "Beading and trims",
+        "Wall panelling and ceiling frames",
+        "Site support work"
+      ],
+      "howToChoose": [
+        "Check that battens are straight and dry before buying.",
+        "Tell us the length and section you need; we can suggest standard sizes."
+      ],
+      "faqs": [
+        {
+          "q": "Which sizes of battens do you keep?",
+          "a": "We keep common sizes used by carpenters. Call us with the section and length and we'll confirm availability."
+        },
+        {
+          "q": "Can battens be delivered with plywood?",
+          "a": "Yes, battens can go in the same delivery as your plywood and boards."
+        }
+      ]
+    },
+    {
+      "slug": "wire-mesh-aluminium",
+      "name": "Wire Mesh & Aluminium Sections",
+      "group": "Hardware & Tools",
+      "icon": "🔩",
+      "summary": "Wire mesh rolls, aluminium pipes and profiles for jaali, frames and partitions.",
+      "intro": "Wire mesh rolls for jaali work and ventilation, plus aluminium pipes and profiles for frames and partitions, all available at the same shop as your plywood and hardware.",
+      "image": "/images/wire-mesh-rolls-delhi.webp",
+      "uses": [
+        "Jaali and ventilation panels",
+        "Window and cupboard mesh",
+        "Aluminium frames and partitions",
+        "Curtain and wardrobe rods"
+      ],
+      "howToChoose": [
+        "Choose the mesh gauge and hole size based on where it will be used.",
+        "Bring measurements; mesh can be cut from the roll to length."
+      ],
+      "faqs": [
+        {
+          "q": "Do you cut wire mesh to size?",
+          "a": "Mesh is sold from the roll by length. Call us with your measurements."
+        },
+        {
+          "q": "Do you sell aluminium pipes and profiles?",
+          "a": "Yes, we stock aluminium pipes and common profiles for frames and partitions."
+        }
+      ]
+    }
+  ]
+}

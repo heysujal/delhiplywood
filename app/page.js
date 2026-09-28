@@ -30,19 +30,11 @@ import {
 import { FaGoogle, FaWhatsapp } from "react-icons/fa"
 import businessConfig from "@/config/business.json"
 import reviewsConfig from "@/config/reviews.json"
+import { products, productPath, brandsByGroup } from "@/lib/products"
 import Link from "next/link"
 import Image from "next/image"
 
-// "Brands available" is derived from each product's brands in business.json,
-// grouped by product group, so there is one place to edit.
-const brandGroups = Object.entries(
-  businessConfig.products.reduce((groups, product) => {
-    if (!product.brands) return groups
-    const brands = (groups[product.group] ||= new Set())
-    product.brands.forEach((brand) => brands.add(brand))
-    return groups
-  }, {})
-).map(([group, brands]) => ({ group, brands: [...brands] }))
+const brandGroups = brandsByGroup()
 
 const { reviews, allReviewsUrl, writeReviewUrl } = reviewsConfig
 const averageRating = reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
@@ -127,7 +119,6 @@ export default function HomePage() {
     address,
     hours,
     established,
-    products,
     features,
     gst,
     paymentMethods,
@@ -187,9 +178,9 @@ export default function HomePage() {
             
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-6">
-              <a href="#products" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
+              <Link href="/products" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
                 Products
-              </a>
+              </Link>
               <a href="#features" className="text-amber-900 hover:text-amber-600 font-medium transition-colors">
                 Why Us
               </a>
@@ -235,13 +226,13 @@ export default function HomePage() {
         {isMobileMenuOpen && (
           <div className="lg:hidden glass-effect border-t border-amber-200/50 animate-fade-in">
             <div className="container mx-auto px-4 py-4 flex flex-col gap-3">
-              <a
-                href="#products"
+              <Link
+                href="/products"
                 className="text-amber-900 font-medium py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Products
-              </a>
+              </Link>
               <a
                 href="#features"
                 className="text-amber-900 font-medium py-2"
@@ -425,11 +416,10 @@ export default function HomePage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {products.map((product, index) => (
+            {products.map((product) => (
               <Card
-                key={index}
-                className="hover:scale-105 hover:shadow-2xl transition-all duration-300 group cursor-pointer"
-                style={{ animationDelay: `${index * 100}ms` }}
+                key={product.slug}
+                className="hover:shadow-2xl transition-all duration-300 group"
               >
                 {product.image && (
                   <Image
@@ -448,10 +438,12 @@ export default function HomePage() {
                     </div>
                   )}
                   <h3 className="text-xl sm:text-2xl font-bold text-amber-900 mb-3">
-                    {product.name}
+                    <Link href={productPath(product.slug)} className="hover:text-amber-600 transition-colors">
+                      {product.name}
+                    </Link>
                   </h3>
                   <p className="text-amber-700 mb-4 leading-relaxed">
-                    {product.description}
+                    {product.summary}
                   </p>
                   
                   {/* Product Details */}
@@ -490,12 +482,13 @@ export default function HomePage() {
                     </div>
                   )}
                   
-                  <a href={`tel:${phone}`}>
-                    <Button variant="outline" size="sm" className="w-full group">
-                      Call {phone}
-                      <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </a>
+                  <Link
+                    href={productPath(product.slug)}
+                    className="inline-flex w-full items-center justify-center gap-2 h-9 px-4 rounded-lg text-sm font-semibold border-2 border-amber-600/30 bg-white/80 text-amber-900 hover:bg-amber-50 hover:border-amber-600 transition-colors"
+                  >
+                    View details
+                    <ChevronRight className="w-4 h-4" />
+                  </Link>
                 </CardContent>
               </Card>
             ))}
@@ -832,9 +825,9 @@ export default function HomePage() {
               <h4 className="font-bold text-lg mb-4">Quick Links</h4>
               <ul className="space-y-2 text-sm text-amber-100">
                 <li>
-                  <a href="#products" className="hover:text-white transition-colors">
+                  <Link href="/products" className="hover:text-white transition-colors">
                     Products
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link href="/blog" className="hover:text-white transition-colors">

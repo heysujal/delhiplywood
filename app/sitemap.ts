@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next"
 import { getAllPosts } from "@/lib/blog"
+import { products, productPath } from "@/lib/products"
 
 const baseUrl = "https://delhiplywood.com"
 
@@ -34,6 +35,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticRoutes, ...blogRoutes]
+  const productRoutes: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/products`,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    ...products.map((product) => ({
+      url: `${baseUrl}${productPath(product.slug)}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+  ]
+
+  return [...staticRoutes, ...productRoutes, ...blogRoutes]
 }
 

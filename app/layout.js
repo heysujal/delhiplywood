@@ -2,6 +2,7 @@ import { GeistSans } from "geist/font/sans"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import businessConfig from "@/config/business.json"
+import { products, productPath } from "@/lib/products"
 import Script from 'next/script'
 
 const { businessName, tagline, phone, alternatePhone, email, address, geo, established } = businessConfig
@@ -132,10 +133,11 @@ const businessSchema = {
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Plywood, boards, laminates and hardware",
-    itemListElement: businessConfig.products.map((product) => ({
+    itemListElement: products.map((product) => ({
       "@type": "OfferCatalog",
       name: product.name,
-      description: product.description,
+      description: product.summary,
+      url: `${baseUrl}${productPath(product.slug)}`,
     })),
   },
   sameAs: [
