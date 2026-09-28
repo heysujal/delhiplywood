@@ -49,10 +49,7 @@
   "gst": "GST Registered",
   "paymentMethods": [
     "Cash",
-    "UPI",
-    "Credit Card",
-    "Debit Card",
-    "Bank Transfer"
+    "UPI"
   ],
   "delivery": {
     "areas": [
