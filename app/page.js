@@ -42,7 +42,7 @@ const formatMonthYear = (isoDate) => {
 const storePhotos = [
   { src: "/images/nitin-plywood-house-signboard-alipur-delhi.webp", alt: "Nitin Plywood House signboard on Main Narela Road, Alipur, Delhi" },
   { src: "/images/nitin-plywood-house-store-interior.webp", alt: "Inside Nitin Plywood House: hardware shelves, Fevicol and plywood" },
-  { src: "/images/shanker-lal-gupta-owner-nitin-plywood-house.webp", alt: "Owner Shanker Lal Gupta at the Nitin Plywood House counter, Alipur", position: "object-[50%_25%]" },
+  { src: "/images/plywood-and-timber-stock-delhi.webp", alt: "Plywood sheets and timber battens in stock at Nitin Plywood House" },
   { src: "/images/lee-perry-pine-plywood-delhi.webp", alt: "Lee Perry BWP and pine plywood sheets in stock" },
   { src: "/images/cabinet-handles-and-fevicol-display-delhi.webp", alt: "Cabinet handles display with Fevicol Marine and HeatX adhesives" },
   { src: "/images/edge-banding-tape-rolls-delhi.webp", alt: "Edge banding tape rolls in different colours" },
@@ -537,7 +537,7 @@ export default function HomePage() {
                 width={600}
                 height={450}
                 sizes="(min-width: 768px) 33vw, 50vw"
-                className={`w-full h-48 sm:h-64 object-cover rounded-2xl shadow-md ${photo.position ?? ""}`}
+                className="w-full h-48 sm:h-64 object-cover rounded-2xl shadow-md"
               />
             ))}
           </div>
