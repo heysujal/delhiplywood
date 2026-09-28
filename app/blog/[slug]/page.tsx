@@ -65,14 +65,15 @@ export default function BlogPostPage({ params }: Props) {
     dateModified: post.frontmatter.date,
     author: {
       "@type": "Organization",
-      name: "Nitin Plywood House Team",
+      name: "Nitin Plywood House",
+      url: baseUrl,
     },
     publisher: {
       "@type": "Organization",
       name: "Nitin Plywood House",
       logo: {
         "@type": "ImageObject",
-        url: `${baseUrl}/og-image.jpg`,
+        url: `${baseUrl}/images/nitin-plywood-house-logo.png`,
       },
     },
     image: `${baseUrl}${post.frontmatter.image}`,
