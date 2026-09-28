@@ -51,7 +51,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     title: data.title || "",
     description: data.description || "",
     date: data.date || "",
-    author: data.author || "Delhi Plywood House Team",
+    author: data.author || "Nitin Plywood House Team",
     tags: data.tags || [],
     image: data.image || "/images/blog/default.jpg",
     readTime: data.readTime || "5 min read",

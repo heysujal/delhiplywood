@@ -2,7 +2,7 @@
 title: "Kitchen Plywood Thickness and Grade Checklist (Delhi Homes)"
 description: "A practical kitchen plywood checklist for Delhi homes: thickness, grade, wet-zone rules, and common mistakes to avoid."
 date: "2026-03-14"
-author: "Delhi Plywood House Team"
+author: "Nitin Plywood House Team"
 tags:
   - kitchen plywood
   - bwr vs bwp

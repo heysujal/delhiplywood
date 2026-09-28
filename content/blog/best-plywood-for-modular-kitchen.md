@@ -2,7 +2,7 @@
 title: "Best Plywood for Modular Kitchen in Delhi 2025 | BWR vs BWP Guide"
 description: "Confused between BWR and BWP plywood for your modular kitchen in Delhi? Learn thickness, grades, brands and price range before you start your kitchen renovation."
 date: "2025-01-15"
-author: "Delhi Plywood House Team"
+author: "Nitin Plywood House Team"
 tags:
   - modular kitchen plywood
   - BWR vs BWP
@@ -55,7 +55,7 @@ Plywood ka main use **carcass** aur kuch cases mein **shutters** mein hota hai. 
 - **Normal cabinets** → Achha branded **BWR plywood** kaafi hai  
 - **Sink ke niche, utility aur wet zone** → Yaha **BWP plywood** strongly recommended hai  
 
-Delhi Plywood House par hum 18mm BWR & BWP **Meranti plywood** recommend karte hain jo long‑term stability ke liye best balance deta hai.
+Nitin Plywood House par hum 18mm BWR & BWP **Meranti plywood** recommend karte hain jo long‑term stability ke liye best balance deta hai.
 
 ## Ideal plywood thickness for modular kitchen
 
@@ -76,7 +76,7 @@ Most Delhi modular kitchens mein **18mm** ek industry standard hai. Agar aap MDF
 - **Green Ply / Green Panel** – Multiple grades for different budgets  
 - **Local Meranti & Pine plywood** – Budget friendly options for low‑cost kitchens  
 
-Delhi Plywood House, Alipur par hum **Meranti plywood**, **pine plywood**, **Action TESA HDMR** aur multiple laminate brands stock rakhte hain jisse contractor aur customer dono ke liye suitable combination ban jata hai.
+Nitin Plywood House, Alipur par hum **Meranti plywood**, **pine plywood**, **Action TESA HDMR** aur multiple laminate brands stock rakhte hain jisse contractor aur customer dono ke liye suitable combination ban jata hai.
 
 ## Delhi price range – 2025 estimate
 
@@ -87,7 +87,7 @@ Exact rate thickness, grade, brand aur market condition par depend karta hai, le
 - **Action TESA HDMR**: variant & finish ke hisaab se price change hota hai  
 - **Budget pine plywood**: slightly lower price, but not ideal for wet zones  
 
-> Latest wholesale & retail price ke liye aap seedha Delhi Plywood House par call karein –  
+> Latest wholesale & retail price ke liye aap seedha Nitin Plywood House par call karein –  
 > **Phone: +91-9212017608**
 
 ## BWR vs BWP – kaun sa kahaan use karein?
@@ -107,14 +107,14 @@ Kitchen shutters ke liye aaj kal popular combination hai:
 - **Shutters** – HDMR / MDF 18mm + **1mm laminate / acrylic / PU finish**  
 - **Inside finish** – White laminate for better light reflection aur cleaning  
 
-Delhi Plywood House par aapko **Greenlam, Merino, Century** jaise leading laminate brands ke saath budget‑friendly options bhi mil jaayenge.
+Nitin Plywood House par aapko **Greenlam, Merino, Century** jaise leading laminate brands ke saath budget‑friendly options bhi mil jaayenge.
 
 ## Buying tips – contractor se galat compromise mat karna
 
 1. **Plywood grade check karein** – Sheet ke side/face par IS:303 ya IS:710 marking zaroor hoti hai  
 2. **Core quality dekhein** – Gaps, voids, patches kam hone chahiye  
 3. **Thickness measure karein** – 18mm board actual caliper se measure karne par near‑about hona chahiye  
-4. **Vendor bill & GST** – Delhi Plywood House jaise GST‑registered store se lene par proper bill & warranty milti hai  
+4. **Vendor bill & GST** – Nitin Plywood House jaise GST‑registered store se lene par proper bill & warranty milti hai  
 5. **Combination approach** – Har jagah sabse mehenga grade lena zaroori nahi, smart mix use karein  
 
 ## FAQ – Modular kitchen plywood in Delhi
@@ -129,7 +129,7 @@ Light usage kitchens mein 16mm bhi use hota hai, lekin **18mm plywood** zyada st
 
 ### Q. Best place to buy kitchen plywood near Alipur / Narela / Rohini?
 
-**Delhi Plywood House**, Near Dayal Market, Main Narela Road, Alipur –  
+**Nitin Plywood House**, Main Narela Road, Dayal Market, Alipur Village, Delhi –  
 North Delhi contractors aur homeowners ka trusted plywood & hardware partner:
 
 - Meranti & pine plywood  
@@ -141,5 +141,5 @@ North Delhi contractors aur homeowners ka trusted plywood & hardware partner:
 ---
 
 **Need help planning plywood for your modular kitchen?**  
-Call **+91-9212017608** or visit **Delhi Plywood House, Alipur** for personalised material planning and best‑value combinations for your 2025 kitchen project.  
+Call **+91-9212017608** or visit **Nitin Plywood House, Alipur** for personalised material planning and best‑value combinations for your 2025 kitchen project.  
 

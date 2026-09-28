@@ -2,7 +2,7 @@
 title: "MDF vs Plywood: Kaunsa Choose Karein? Complete 2025 Comparison"
 description: "MDF vs plywood for modular kitchen, wardrobes and furniture in Delhi. Strength, moisture resistance, screw holding, price comparison and clear verdict table."
 date: "2025-03-10"
-author: "Delhi Plywood House Team"
+author: "Nitin Plywood House Team"
 tags:
   - MDF vs plywood
   - furniture materials
@@ -109,7 +109,7 @@ Exact price thickness, brand aur grade par depend karta hai, lekin generally:
 - Lekin agar aap wrong place par MDF use kar dete hain jahan plywood chahiye tha,  
   toh future repair / replacement ka cost zyada aa sakta hai
 
-Delhi Plywood House par hum har project ke liye **hybrid cost‑effective mix** suggest karte hain –  
+Nitin Plywood House par hum har project ke liye **hybrid cost‑effective mix** suggest karte hain –  
 jahaan plywood zaroori hai waha plywood, jahan MDF chalega waha MDF.
 
 ## Verdict table – MDF vs Plywood (Delhi homes)
@@ -127,7 +127,7 @@ jahaan plywood zaroori hai waha plywood, jahan MDF chalega waha MDF.
 > Structure & strength ke liye **plywood**.  
 > Design & smooth looks ke liye **MDF**.
 
-## Delhi Plywood House recommendation – 2025 combo formula
+## Nitin Plywood House recommendation – 2025 combo formula
 
 1. **Kitchen**  
    - Carcass: BWR/BWP Meranti plywood  
@@ -153,10 +153,10 @@ teeno benefits milte hain.
 
 **Ab bhi confusion hai ki aapke project me MDF kitna aur plywood kitna use hona chahiye?**  
 
-Apne carpenter / contractor ke saath **Delhi Plywood House, Alipur** par aaiye,  
+Apne carpenter / contractor ke saath **Nitin Plywood House, Alipur** par aaiye,  
 ya WhatsApp par drawing bhejiye:
 
-- **Address:** Near Dayal Market, Main Narela Road, Alipur, Delhi 110036  
+- **Address:** Main Narela Road, Dayal Market, Alipur Village, Delhi 110036  
 - **Call / WhatsApp:** +91-9212017608  
 
 Hum aapke ghar ke size, budget aur usage ke hisaab se ek practical material mix recommend karenge –  

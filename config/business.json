@@ -1,16 +1,24 @@
 {
-  "businessName": "Delhi Plywood House",
-  "tagline": "Premium Quality Plywood & Hardware Solutions",
+  "businessName": "Nitin Plywood House",
+  "tagline": "Plywood, Laminates & Hardware Shop in Delhi",
   "phone": "+91-9212017608",
+  "alternatePhone": "+91-9818944956",
   "whatsapp": "+91-9212017608",
   "email": "gshankerlal4@gmail.com",
   "website": "delhiplywood.com",
+  "logo": "/images/nitin-plywood-house-logo.png",
+  "ogImage": "/og-image.jpg",
   "address": {
-    "street": "Near Dayal Market, Main Narela Road",
-    "city": "Alipur",
+    "street": "Main Narela Road, Dayal Market, Alipur Village",
+    "city": "Delhi",
+    "locality": "Alipur",
     "state": "Delhi",
     "pincode": "110036",
-    "full": "Near Dayal Market, Main Narela Road, Alipur, Delhi, 110036"
+    "full": "Main Narela Road, Dayal Market, Alipur Village, Delhi 110036"
+  },
+  "geo": {
+    "latitude": 28.7972088,
+    "longitude": 77.1322636
   },
   "googleMapsLink": "https://maps.app.goo.gl/EayhaPxAftiQwaQcA",
   "hours": {
@@ -18,26 +26,48 @@
     "saturday": "9:00 AM - 7:30 PM",
     "sunday": "9:00 AM - 7:30 PM"
   },
+  "openingHours": [
+    {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "19:30"
+    }
+  ],
   "established": "2000",
   "socialMedia": {
     "facebook": "",
     "instagram": ""
   },
   "gst": "GST Registered",
-  "paymentMethods": ["Cash", "UPI", "Credit Card", "Debit Card", "Bank Transfer"],
+  "paymentMethods": [
+    "Cash",
+    "UPI",
+    "Credit Card",
+    "Debit Card",
+    "Bank Transfer"
+  ],
   "delivery": {
     "areas": [
-      "Delhi NCR (same-day delivery where possible)",
-      "Pan-India supply and transport dispatch available"
+      "All of Delhi",
+      "Delhi NCR: Gurugram, Noida, Ghaziabad, Faridabad, Sonipat, Bahadurgarh",
+      "Pan-India supply via transport"
     ],
     "minimumOrder": "Retail and bulk orders accepted",
-    "sameDay": "Same-day delivery available across Delhi NCR (stock and timing dependent)"
+    "sameDay": "Same-day delivery across Delhi (stock and timing dependent)"
   },
   "trustBadges": [
     "GST Registered Business",
-    "26+ Years in Business Since 2000",
+    "In Business Since 2000",
     "1000+ Happy Customers",
-    "Quality Certified Products"
+    "Delivery Across Delhi NCR"
   ],
   "products": [
     {
@@ -46,47 +76,28 @@
       "icon": "🚢",
       "grade": "BWR Grade",
       "thickness": "6mm - 25mm",
-      "price": "2800",
-      "priceValidUntil": "2027-03-14",
-      "ratingValue": "4.8",
-      "reviewCount": 52,
-      "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80"
+      "image": "/images/bwr-plywood-sheets-delhi.webp"
     },
     {
       "name": "Pine Plywood",
       "description": "High-quality pine plywood for furniture, paneling and interior applications.",
       "icon": "🌲",
       "grade": "MR Grade",
-      "thickness": "6mm - 19mm",
-      "price": "1800",
-      "priceValidUntil": "2027-03-14",
-      "ratingValue": "4.8",
-      "reviewCount": 47,
-      "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=1200&q=80"
+      "thickness": "6mm - 19mm"
     },
     {
       "name": "MDF Boards",
       "description": "Medium Density Fiberboard for smooth finishing, CNC designs and wardrobe shutters.",
       "icon": "📋",
       "grade": "Premium Quality",
-      "thickness": "6mm - 25mm",
-      "price": "1500",
-      "priceValidUntil": "2027-03-14",
-      "ratingValue": "4.8",
-      "reviewCount": 41,
-      "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+      "thickness": "6mm - 25mm"
     },
     {
       "name": "HDMR Boards",
       "description": "High Density Moisture Resistant boards ideal for kitchen and wardrobe shutters.",
       "icon": "🪵",
       "grade": "HDMR",
-      "thickness": "16mm - 25mm",
-      "price": "2200",
-      "priceValidUntil": "2027-03-14",
-      "ratingValue": "4.8",
-      "reviewCount": 38,
-      "image": "https://images.unsplash.com/photo-1616628188380-3e6e0a3f0f52?auto=format&fit=crop&w=1200&q=80"
+      "thickness": "16mm - 25mm"
     },
     {
       "name": "Sunmica & Laminates",
@@ -94,45 +105,28 @@
       "icon": "✨",
       "brands": "Greenlam, Merino, Century",
       "thickness": "0.8mm - 1.5mm",
-      "price": "800",
-      "priceValidUntil": "2027-03-14",
-      "ratingValue": "4.8",
-      "reviewCount": 35,
-      "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80"
+      "image": "/images/laminates-and-plywood-section-delhi.webp"
     },
     {
       "name": "Doors",
       "description": "Ready-to-finish flush doors and laminated doors for homes and offices.",
       "icon": "🚪",
       "grade": "Flush & Laminated Doors",
-      "thickness": "30mm - 35mm",
-      "price": "3200",
-      "priceValidUntil": "2027-03-14",
-      "ratingValue": "4.8",
-      "reviewCount": 33,
-      "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80"
+      "thickness": "30mm - 35mm"
     },
     {
       "name": "Fevicol & Adhesives",
       "description": "Premium quality adhesives for strong and lasting plywood and laminate bonds.",
       "icon": "🔗",
       "brands": "Fevicol, Araldite, Pidilite",
-      "price": "450",
-      "priceValidUntil": "2027-03-14",
-      "ratingValue": "4.8",
-      "reviewCount": 31,
-      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80"
+      "image": "/images/fevicol-probond-adhesive-delhi.webp"
     },
     {
       "name": "Hardware Items",
       "description": "Nails, screws, drill bits, blades and other essential furniture hardware.",
       "icon": "🔧",
       "categories": "Screws, Nails, Hinges, Handles, Locks",
-      "price": "200",
-      "priceValidUntil": "2027-03-14",
-      "ratingValue": "4.8",
-      "reviewCount": 29,
-      "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80"
+      "image": "/images/hardware-fittings-shelves-delhi.webp"
     }
   ],
   "features": [
@@ -167,5 +161,14 @@
       "role": "Software Engineer"
     }
   ],
-  "areasServed": ["Delhi NCR", "Pan-India supply"]
+  "areasServed": [
+    "Delhi",
+    "Gurugram",
+    "Noida",
+    "Ghaziabad",
+    "Faridabad",
+    "Sonipat",
+    "Bahadurgarh",
+    "Pan-India supply"
+  ]
 }

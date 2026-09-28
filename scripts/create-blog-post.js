@@ -74,7 +74,7 @@ const content = `---
 title: "${title}"
 description: "Write a compelling summary for search results in 140-160 characters."
 date: "${date}"
-author: "Delhi Plywood House Team"
+author: "Nitin Plywood House Team"
 tags:
   - plywood delhi
   - buying guide

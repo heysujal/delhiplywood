@@ -2,7 +2,7 @@
 title: "Ghar Ki Wardrobe Ke Liye Kaun Sa Plywood Best Hai? | Best Plywood for Wardrobes"
 description: "Wardrobe ke liye 12mm, 16mm ya 19mm plywood? MDF vs plywood, interior vs exterior boards, cost estimates aur bilingual Hindi + English FAQ."
 date: "2025-03-05"
-author: "Delhi Plywood House Team"
+author: "Nitin Plywood House Team"
 tags:
   - wardrobe plywood
   - bedroom storage
@@ -49,7 +49,7 @@ Is detailed guide mein hum Delhi ke flats aur kothiyon ke context mein simple la
 > **Carcass (andar wala box)** → Plywood  
 > **Shutters (bahar ke darwaze)** → MDF / HDMR + laminate / PU
 
-Delhi Plywood House par hum ye hybrid system hi maximum clients ko recommend karte hain – strength + design dono mil jata hai.
+Nitin Plywood House par hum ye hybrid system hi maximum clients ko recommend karte hain – strength + design dono mil jata hai.
 
 ## Recommended thickness – 12mm, 16mm, 19mm kaise choose karein?
 
@@ -95,7 +95,7 @@ Wardrobe ka experience sirf board par depend nahi karta, hardware bhi equally im
 - **Telescopic / tandem channels** – drawer movement smooth aur long‑lasting hota hai  
 - **Locks & handles** – rust‑free, brand certified hardware use karein  
 
-Delhi Plywood House par aap plywood + hinges + channels + locks ek hi jagah se pick kar sakte hain, jisse compatibility aur availability ka tension nahi rehta.
+Nitin Plywood House par aap plywood + hinges + channels + locks ek hi jagah se pick kar sakte hain, jisse compatibility aur availability ka tension nahi rehta.
 
 ## Cost estimates – ek standard wardrobe ke liye approx material
 
@@ -112,7 +112,7 @@ Overall cost:
 - **Mid‑range** – Meranti plywood + branded laminates (Greenlam, Merino, Century)  
 - **Premium** – BWP plywood strategic areas + designer laminates / PU shutters
 
-Exact pricing ke liye aap apni design drawing ke saath **Delhi Plywood House** visit karein, hum aapko exact sheet count aur grade suggestion ke saath quotation de sakte hain.
+Exact pricing ke liye aap apni design drawing ke saath **Nitin Plywood House** visit karein, hum aapko exact sheet count aur grade suggestion ke saath quotation de sakte hain.
 
 ## Bilingual Wardrobe FAQ – Hindi + English
 
@@ -139,7 +139,7 @@ Matt, suede aur light texture laminates wardrobe ke liye best hote hain – scra
 ### Q5. *Delhi mein good quality wardrobe plywood kahan milega?* / Where to buy wardrobe plywood in Delhi?
 
 **Answer:**  
-North Delhi, Alipur region ke liye **Delhi Plywood House** ek trusted plywood & hardware store hai jahan aap:
+North Delhi, Alipur region ke liye **Nitin Plywood House** ek trusted plywood & hardware store hai jahan aap:
 
 - Meranti & pine plywood  
 - MDF & HDMR boards  
@@ -154,7 +154,7 @@ ek hi place se le sakte hain.
 
 Sheet size, thickness aur grade clarity chahiye ho to simply:
 
-- **Delhi Plywood House, Near Dayal Market, Main Narela Road, Alipur, Delhi 110036** visit karein  
+- **Nitin Plywood House, Main Narela Road, Dayal Market, Alipur Village, Delhi 110036** visit karein  
 - Ya **WhatsApp par design bhejein – +91-9212017608**  
 
 Hum aapko **best plywood mix** suggest karenge jo budget aur durability dono balance kare.  

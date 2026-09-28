@@ -2,7 +2,7 @@
 title: "BWR vs BWP Plywood: Complete Waterproof Plywood Guide for Delhi Homes"
 description: "Understand BWR and BWP waterproof plywood, IS:303 vs IS:710 standards, boiling water test and right usage for kitchens and bathrooms in Delhi homes."
 date: "2025-02-20"
-author: "Delhi Plywood House Team"
+author: "Nitin Plywood House Team"
 tags:
   - waterproof plywood
   - BWR plywood
@@ -65,7 +65,7 @@ Iska rate BWR se zyada hota hai, lekin long‑term me replacement cost bach jati
 | Ideal for Delhi?     | Yes, most indoor furniture        | Critical wet zones & premium projects   |
 
 **Smart approach**:  
-Pure har jageh BWP use karne ki zaroorat nahi. Delhi Plywood House par hum ye recommend karte hain:
+Pure har jageh BWP use karne ki zaroorat nahi. Nitin Plywood House par hum ye recommend karte hain:
 
 - **Normal cabinets** → Achha branded BWR plywood  
 - **Sink unit, washing area** → BWP plywood  
@@ -108,10 +108,10 @@ Exact prices market aur brand ke hisaab se change hote rehte hain, lekin roughly
 - **18mm BWP / Marine plywood** – usse ek notch higher  
 - **MDF & HDMR** – thickness & brand par depend  
 
-Latest quotation ke liye aap directly **Delhi Plywood House** se contact kar sakte hain:
+Latest quotation ke liye aap directly **Nitin Plywood House** se contact kar sakte hain:
 
 - Phone / WhatsApp: **+91-9212017608**  
-- Location: Near Dayal Market, Main Narela Road, Alipur, Delhi 110036  
+- Location: Main Narela Road, Dayal Market, Alipur Village, Delhi 110036  
 
 ## Contractor tips – galat compromise se kaise bachein?
 
@@ -120,9 +120,9 @@ Latest quotation ke liye aap directly **Delhi Plywood House** se contact kar sak
 - BWR & BWP ka proper mix banwaiye instead of sab jageh low‑grade board  
 - Laminate, edge banding & sealing bhi equally important hain for waterproof performance  
 
-## Delhi Plywood House – waterproof plywood specialist in North Delhi
+## Nitin Plywood House – waterproof plywood specialist in North Delhi
 
-Delhi Plywood House par aapko milte hain:
+Nitin Plywood House par aapko milte hain:
 
 - Meranti BWR & BWP plywood sheets  
 - Pine plywood, MDF, HDMR boards  
@@ -135,7 +135,7 @@ Hum **Alipur, Narela, Rohini, Burari, Pitampura, Model Town** aur nearby areas k
 
 **Confused kaun sa plywood kahaan use karein?**  
 
-Apna floor plan ya kitchen design lekar **Delhi Plywood House, Alipur** par aaiye –  
+Apna floor plan ya kitchen design lekar **Nitin Plywood House, Alipur** par aaiye –  
 hum aapko **BWR vs BWP** ka best combination suggest karenge jo budget aur durability dono balance kare.
 
 - **Call: +91-9212017608**  

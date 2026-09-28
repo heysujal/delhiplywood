@@ -43,7 +43,7 @@ export default function BlogPost({
         dangerouslySetInnerHTML={{ __html: html }}
       />
       <footer className="mt-10 border-t border-amber-100 pt-6 text-sm text-amber-700">
-        <p className="font-semibold mb-2">Written by Delhi Plywood House Team</p>
+        <p className="font-semibold mb-2">Written by Nitin Plywood House Team</p>
         <p>
           Need quality plywood or laminates in Delhi?{" "}
           <a href="tel:+919212017608" className="font-bold text-amber-900">

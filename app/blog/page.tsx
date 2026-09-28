@@ -6,7 +6,7 @@ import BlogCard from "@/components/BlogCard"
 const baseUrl = "https://delhiplywood.com"
 
 export const metadata: Metadata = {
-  title: "Plywood & Sunmica Blog | Buying Guides & Tips | Delhi Plywood House",
+  title: "Plywood & Sunmica Blog | Buying Guides & Tips | Nitin Plywood House",
   description:
     "Read expert guides on plywood, sunmica, laminates, MDF and modular kitchen materials in Delhi. Learn how to choose the best plywood for kitchen, wardrobe and home renovation.",
   alternates: {
@@ -15,15 +15,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: `${baseUrl}/blog`,
-    title: "Delhi Plywood House Blog | Plywood & Sunmica Guides",
+    title: "Nitin Plywood House Blog | Plywood & Sunmica Guides",
     description:
       "In-depth plywood and laminate guides for modular kitchens, wardrobes and Delhi home renovation projects.",
     images: [
       {
-        url: `${baseUrl}/hero-logo.png`,
+        url: `${baseUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Delhi Plywood House - Plywood & Hardware in Delhi",
+        alt: "Nitin Plywood House - Plywood & Hardware in Delhi",
       },
     ],
   },
@@ -56,7 +56,7 @@ export default function BlogIndexPage() {
             Plywood &amp; Sunmica Blog for Delhi Homes
           </h1>
           <p className="text-amber-800 text-lg max-w-3xl">
-            Practical guides from Delhi Plywood House to help you choose the right plywood, sunmica,
+            Practical guides from Nitin Plywood House to help you choose the right plywood, sunmica,
             laminates and MDF for modular kitchens, wardrobes and full home renovation in Delhi NCR.
           </p>
         </header>
@@ -73,7 +73,7 @@ export default function BlogIndexPage() {
             <strong>“plywood near me in Delhi”</strong> or the{" "}
             <strong>best plywood shop in Alipur</strong>?{" "}
             <Link href="/" className="font-semibold text-amber-900 hover:text-amber-700">
-              Visit Delhi Plywood House
+              Visit Nitin Plywood House
             </Link>{" "}
             for HDMR boards, Action TESA, sunmica, laminates and complete hardware solutions with
             Pan-India supply support.

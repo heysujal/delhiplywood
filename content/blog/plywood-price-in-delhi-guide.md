@@ -2,7 +2,7 @@
 title: "Plywood Price in Delhi: 2026 Practical Buying Guide"
 description: "Understand plywood price ranges in Delhi by grade, thickness, and use-case. A practical guide for kitchens, wardrobes, and renovation projects."
 date: "2026-03-14"
-author: "Delhi Plywood House Team"
+author: "Nitin Plywood House Team"
 tags:
   - plywood price delhi
   - bwr bwp plywood

@@ -2,7 +2,7 @@
 title: "How to Choose the Right Plywood Shop Near You in Delhi"
 description: "Searching for a plywood shop near me in Delhi? Use this checklist to evaluate quality, pricing transparency, stock depth, and delivery support."
 date: "2026-03-14"
-author: "Delhi Plywood House Team"
+author: "Nitin Plywood House Team"
 tags:
   - plywood near me
   - plywood shop delhi

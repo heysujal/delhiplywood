@@ -19,7 +19,7 @@ export function generateMetadata({ params }: Props): Metadata {
   const url = `${baseUrl}/blog/${post.slug}`
 
   return {
-    title: `${post.frontmatter.title} | Delhi Plywood House Blog`,
+    title: `${post.frontmatter.title} | Nitin Plywood House Blog`,
     description: post.frontmatter.description,
     alternates: {
       canonical: url,
@@ -65,14 +65,14 @@ export default function BlogPostPage({ params }: Props) {
     dateModified: post.frontmatter.date,
     author: {
       "@type": "Organization",
-      name: "Delhi Plywood House Team",
+      name: "Nitin Plywood House Team",
     },
     publisher: {
       "@type": "Organization",
-      name: "Delhi Plywood House",
+      name: "Nitin Plywood House",
       logo: {
         "@type": "ImageObject",
-        url: `${baseUrl}/hero-logo.png`,
+        url: `${baseUrl}/og-image.jpg`,
       },
     },
     image: `${baseUrl}${post.frontmatter.image}`,
@@ -137,7 +137,7 @@ export default function BlogPostPage({ params }: Props) {
             Need quality plywood for your project?
           </h2>
           <p className="text-amber-800 mb-3">
-            Delhi Plywood House supplies Meranti plywood, pine plywood, MDF, HDMR, sunmica and
+            Nitin Plywood House supplies Meranti plywood, pine plywood, MDF, HDMR, sunmica and
             laminates for modular kitchens, wardrobes and full home renovation in Delhi NCR with
             Pan-India supply support.
           </p>
@@ -172,7 +172,7 @@ export default function BlogPostPage({ params }: Props) {
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 z-40 inline-flex items-center justify-center w-14 h-14 rounded-full bg-green-500 text-white shadow-xl hover:bg-green-600 transition-colors"
-          aria-label="WhatsApp chat Delhi Plywood House"
+          aria-label="WhatsApp chat Nitin Plywood House"
         >
           💬
         </a>

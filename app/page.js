@@ -31,6 +31,15 @@ import { FaGoogle, FaWhatsapp } from "react-icons/fa"
 import businessConfig from "@/config/business.json"
 import Link from "next/link"
 
+const storePhotos = [
+  { src: "/images/nitin-plywood-house-signboard-alipur-delhi.webp", alt: "Nitin Plywood House signboard on Main Narela Road, Alipur, Delhi" },
+  { src: "/images/nitin-plywood-house-owner-at-shop.webp", alt: "Customer counter at Nitin Plywood House, Alipur" },
+  { src: "/images/laminates-and-plywood-section-delhi.webp", alt: "Laminate and plywood section at Nitin Plywood House" },
+  { src: "/images/bwr-plywood-sheets-delhi.webp", alt: "BWR plywood sheets in stock" },
+  { src: "/images/edge-banding-tape-rolls-delhi.webp", alt: "Edge banding tape rolls in different colours" },
+  { src: "/images/hardware-fittings-shelves-delhi.webp", alt: "Hardware and fittings shelves" },
+]
+
 // Inline Button Component
 function Button({ children, className = "", onClick, variant = "default", size = "default", ...props }) {
   const baseStyles = "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg font-semibold transition-all duration-300 disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
@@ -89,6 +98,7 @@ export default function HomePage() {
     businessName,
     tagline,
     phone,
+    alternatePhone,
     whatsapp,
     email,
     address,
@@ -103,6 +113,7 @@ export default function HomePage() {
     testimonials,
     areasServed,
     googleMapsLink,
+    logo,
   } = businessConfig
 
   const yearsOfExperience = new Date().getFullYear() - parseInt(established)
@@ -158,11 +169,15 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-orange-600 rounded-xl flex items-center justify-center shadow-lg transform hover:rotate-6 transition-transform duration-300">
-                <span className="text-white font-bold text-xl">N</span>
-              </div>
+              <img
+                src={logo}
+                alt={`${businessName} logo`}
+                width={48}
+                height={48}
+                className="w-12 h-12 rounded-xl shadow-lg"
+              />
               <div>
-                <h1 className="text-xl sm:text-2xl font-bold text-amber-900">{businessName}</h1>
+                <p className="text-xl sm:text-2xl font-bold text-amber-900">{businessName}</p>
                 <p className="text-xs sm:text-sm text-amber-700 hidden sm:block">{tagline}</p>
               </div>
             </div>
@@ -285,13 +300,13 @@ export default function HomePage() {
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              <span className="text-amber-900">Premium Plywood &</span>
+              <span className="text-amber-900">Plywood, Laminates &</span>
               <br />
-              <span className="gradient-text">Hardware Solutions</span>
+              <span className="gradient-text">Hardware Shop in Delhi</span>
             </h1>
             
             <p className="text-lg sm:text-xl md:text-2xl text-amber-800 max-w-3xl mx-auto leading-relaxed">
-              Delhi-first service with Pan-India supply support. Quality products and trusted guidance for over {yearsOfExperience} years.
+              {businessName} has supplied plywood, MDF, HDMR boards, sunmica, doors and hardware since {established}. Delivery across Delhi NCR and supply across India.
             </p>
             
             {/* Stats */}
@@ -413,10 +428,22 @@ export default function HomePage() {
                 className="hover:scale-105 hover:shadow-2xl transition-all duration-300 group cursor-pointer"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
+                {product.image && (
+                  <img
+                    src={product.image}
+                    alt={`${product.name} at ${businessName}, Delhi`}
+                    width={600}
+                    height={400}
+                    loading="lazy"
+                    className="w-full h-48 object-cover rounded-t-2xl"
+                  />
+                )}
                 <CardContent className="p-6 sm:p-8">
-                  <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300 inline-block">
-                    {product.icon}
-                  </div>
+                  {!product.image && (
+                    <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300 inline-block">
+                      {product.icon}
+                    </div>
+                  )}
                   <h3 className="text-xl sm:text-2xl font-bold text-amber-900 mb-3">
                     {product.name}
                   </h3>
@@ -611,6 +638,33 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Store Photos */}
+      <section id="store" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-amber-50 to-orange-50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-amber-900 mb-4">
+              Inside <span className="gradient-text">Our Store</span>
+            </h2>
+            <p className="text-lg text-amber-700 max-w-2xl mx-auto">
+              Plywood, laminates, adhesives and hardware in stock at our Alipur, Delhi store
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {storePhotos.map((photo) => (
+              <img
+                key={photo.src}
+                src={photo.src}
+                alt={photo.alt}
+                width={600}
+                height={450}
+                loading="lazy"
+                className="w-full h-48 sm:h-64 object-cover rounded-2xl shadow-md"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact Info Section */}
       <section id="contact" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white/50">
         <div className="container mx-auto max-w-6xl">
@@ -666,6 +720,12 @@ export default function HomePage() {
                     <Phone className="w-4 h-4" />
                     {phone}
                   </a>
+                  {alternatePhone && (
+                    <a href={`tel:${alternatePhone}`} className="flex items-center justify-center gap-2 text-amber-900 hover:text-amber-600 font-semibold transition-colors">
+                      <Phone className="w-4 h-4" />
+                      {alternatePhone}
+                    </a>
+                  )}
                   <a href={`mailto:${email}`} className="flex items-center justify-center gap-2 text-amber-900 hover:text-amber-600 font-semibold transition-colors">
                     <Mail className="w-4 h-4" />
                     {email}
@@ -706,13 +766,17 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">N</span>
-                </div>
+                <img
+                  src={logo}
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="w-10 h-10 rounded-lg"
+                />
                 <span className="font-bold text-xl">{businessName}</span>
               </div>
               <p className="text-amber-100 text-sm leading-relaxed">
-                {tagline}. Delhi-first support with Pan-India supply, serving customers since {established}.
+                {tagline}. Serving homes, carpenters and contractors across Delhi NCR since {established}, with supply across India.
               </p>
             </div>
             
@@ -765,7 +829,7 @@ export default function HomePage() {
                 <li className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />
                   <a
-                    href="https://maps.app.goo.gl/EayhaPxAftiQwaQcA"
+                    href={googleMapsLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition-colors"
@@ -787,7 +851,7 @@ export default function HomePage() {
                 style={{ border: 0 }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Delhi Plywood House location map"
+                title="Nitin Plywood House location map"
                 allowFullScreen
               />
             </div>

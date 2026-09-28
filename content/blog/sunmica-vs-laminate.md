@@ -2,7 +2,7 @@
 title: "Sunmica vs Laminate: Which is Better for Your Home? (2025 Guide)"
 description: "Confused between sunmica and laminate for your kitchen, wardrobe or furniture? Understand thickness, durability, cost and best use cases for Delhi homes."
 date: "2025-02-02"
-author: "Delhi Plywood House Team"
+author: "Nitin Plywood House Team"
 tags:
   - sunmica
   - laminate
@@ -44,7 +44,7 @@ Home interiors ke liye common laminate options:
 - **1.0mm** – Standard thickness, zyada durable, daily wear & tear ke liye better  
 - **1.25mm+** – Heavy duty / special applications, compact laminates, exterior grade etc.
 
-Delhi Plywood House par hum mainly **0.8mm aur 1mm** range ka **Greenlam, Merino, Century** jaise brands ka stock rakhte hain, jo modular kitchen, wardrobe aur furniture ke liye ideal hain.
+Nitin Plywood House par hum mainly **0.8mm aur 1mm** range ka **Greenlam, Merino, Century** jaise brands ka stock rakhte hain, jo modular kitchen, wardrobe aur furniture ke liye ideal hain.
 
 ## Durability – kaun sa surface kitna strong hai?
 
@@ -86,7 +86,7 @@ Kitchen ke liye **bohot light glossy acrylic** lena avoid karein agar heavy cook
   - Fluted panels ke saath solid tone laminates  
   - Glass + laminate mashup
 
-Delhi Plywood House par aap **Greenlam, Merino, Century** jaise brands ke design folders dekh kar live selection kar sakte hain.
+Nitin Plywood House par aap **Greenlam, Merino, Century** jaise brands ke design folders dekh kar live selection kar sakte hain.
 
 ## Cost comparison – laminate vs other finishes (Delhi 2025)
 
@@ -119,7 +119,7 @@ Proper use se laminate finish 10–15 saal tak easily chal sakti hai.
 
 North Delhi & outer ring areas ke liye, **Alipur plywood market** ek convenient hub hai.  
 
-**Delhi Plywood House**, Alipur par aapko milte hain:
+**Nitin Plywood House**, Alipur par aapko milte hain:
 
 - Greenlam, Merino, Century jaise leading laminate brands  
 - Budget sunmica options for rental properties & basic work  
@@ -131,7 +131,7 @@ North Delhi & outer ring areas ke liye, **Alipur plywood market** ek convenient 
 **Still confused between options for your home?**  
 
 Photos lekar seedha store aayiye, ya WhatsApp par share kijiye –  
-**Delhi Plywood House, Near Dayal Market, Main Narela Road, Alipur, Delhi 110036**  
+**Nitin Plywood House, Main Narela Road, Dayal Market, Alipur Village, Delhi 110036**  
 
 - **Call / WhatsApp: +91-9212017608**  
 - Serving **Alipur, Narela, Rohini, Burari, Pitampura, Model Town** and nearby Delhi areas  

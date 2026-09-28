@@ -5,9 +5,9 @@ const baseUrl = "https://delhiplywood.com"
 
 export const metadata: Metadata = {
   title:
-    "Plywood for Home Renovation in Delhi | Modular Kitchen, Wardrobe, Flooring | Delhi Plywood House",
+    "Plywood for Home Renovation in Delhi | Modular Kitchen, Wardrobe, Flooring | Nitin Plywood House",
   description:
-    "Plan your home renovation in Delhi with the right plywood for modular kitchens, wardrobes and flooring. Get Meranti plywood, HDMR boards, laminates and hardware from Delhi Plywood House in Alipur.",
+    "Plan your home renovation in Delhi with the right plywood for modular kitchens, wardrobes and flooring. Get Meranti plywood, HDMR boards, laminates and hardware from Nitin Plywood House in Alipur.",
   alternates: {
     canonical: `${baseUrl}/renovation`,
   },
@@ -15,15 +15,15 @@ export const metadata: Metadata = {
     type: "website",
     url: `${baseUrl}/renovation`,
     title:
-      "Plywood for Home Renovation in Delhi | Modular Kitchen, Wardrobe, Flooring | Delhi Plywood House",
+      "Plywood for Home Renovation in Delhi | Modular Kitchen, Wardrobe, Flooring | Nitin Plywood House",
     description:
-      "Delhi Plywood House supplies moisture-resistant plywood, HDMR and laminates for complete home renovation in Delhi NCR.",
+      "Nitin Plywood House supplies moisture-resistant plywood, HDMR and laminates for complete home renovation in Delhi NCR.",
     images: [
       {
-        url: `${baseUrl}/hero-logo.png`,
+        url: `${baseUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Delhi Plywood House - Home Renovation Plywood Solutions",
+        alt: "Nitin Plywood House - Home Renovation Plywood Solutions",
       },
     ],
   },
@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "Delhi mein plywood ka rate kya hai? / What is plywood price in Delhi?",
-    a: "Delhi mein plywood ka rate thickness, grade aur brand par depend karta hai. Meranti plywood, pine plywood, MDF aur HDMR boards ke alag-alag price segments hote hain. Latest wholesale aur retail rate ke liye aap seedha Delhi Plywood House ko call kar sakte hain: +91-9212017608.",
+    a: "Delhi mein plywood ka rate thickness, grade aur brand par depend karta hai. Meranti plywood, pine plywood, MDF aur HDMR boards ke alag-alag price segments hote hain. Latest wholesale aur retail rate ke liye aap seedha Nitin Plywood House ko call kar sakte hain: +91-9212017608.",
   },
   {
     q: "MDF ya plywood, ghar ke furniture ke liye kya better hai? / MDF or plywood for home furniture?",
@@ -52,7 +52,7 @@ const faqs = [
   },
   {
     q: "Kya aap delivery dete hain? / Do you offer delivery?",
-    a: "Haan, Delhi Plywood House Alipur, Narela, Rohini, Burari, Pitampura, Model Town aur nearby areas mein same-day delivery provide karta hai (stock and timing ke hisaab se).",
+    a: "Haan, Nitin Plywood House poori Delhi mein delivery karta hai, aur Gurugram, Noida, Ghaziabad, Faridabad, Sonipat aur Bahadurgarh tak bhi. Stock aur timing ke hisaab se same-day delivery possible hai. Bade orders ke liye transport se poore India mein supply hoti hai.",
   },
 ]
 
@@ -113,7 +113,7 @@ export default function RenovationPage() {
             Complete Plywood Solutions for Home Renovation in Delhi
           </h1>
           <p className="text-amber-800 text-lg max-w-3xl mx-auto">
-            Delhi Plywood House, Alipur – your one-stop shop for modular kitchen plywood, wardrobe
+            Nitin Plywood House, Alipur – your one-stop shop for modular kitchen plywood, wardrobe
             boards, flooring underlay and hardware for full home renovation in Delhi NCR.
           </p>
         </header>
@@ -170,7 +170,7 @@ export default function RenovationPage() {
             crockery unit, study table aur kuch loose furniture include hota hai.
           </p>
           <p className="text-amber-800 mb-2">
-            Har project ka scope alag hota hai – isliye Delhi Plywood House aapko approximate sheet
+            Har project ka scope alag hota hai – isliye Nitin Plywood House aapko approximate sheet
             requirement aur material mix plan karne mein madad karta hai.
           </p>
           <p className="text-amber-900 font-semibold">
@@ -208,7 +208,7 @@ export default function RenovationPage() {
         <section className="mb-10 bg-white/90 border border-amber-100 rounded-2xl p-6 sm:p-8">
           <h2 className="text-2xl font-bold text-amber-900 mb-3">Visit Our Store in Alipur</h2>
           <p className="text-amber-800 mb-2">
-            Address: Near Dayal Market, Main Narela Road, Alipur, Delhi 110036
+            Address: Main Narela Road, Dayal Market, Alipur Village, Delhi 110036
           </p>
           <p className="text-amber-800 mb-2">
             Phone:{" "}
@@ -217,7 +217,7 @@ export default function RenovationPage() {
             </a>
           </p>
           <p className="text-amber-800 mb-4">
-            Delhi Plywood House – Alipur plywood market mein ek trusted GST registered plywood,
+            Nitin Plywood House – Alipur plywood market mein ek trusted GST registered plywood,
             sunmica, laminate, MDF, HDMR aur hardware supplier.
           </p>
           <div className="aspect-video w-full rounded-xl overflow-hidden border border-amber-100 shadow-sm">
@@ -228,7 +228,7 @@ export default function RenovationPage() {
               style={{ border: 0 }}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Delhi Plywood House location map"
+              title="Nitin Plywood House location map"
               allowFullScreen
             />
           </div>
