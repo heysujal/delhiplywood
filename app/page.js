@@ -92,7 +92,6 @@ function CardContent({ children, className = "", ...props }) {
 export default function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [visibleSection, setVisibleSection] = useState("")
 
   const {
     businessName,
@@ -126,29 +125,10 @@ export default function HomePage() {
       setIsScrolled(window.scrollY > 20)
     }
 
-    // Intersection Observer for fade-in animations
-    const sections = document.querySelectorAll("section")
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setVisibleSection(entry.target.id)
-            entry.target.classList.add("animate-fade-in")
-          }
-        })
-      },
-      { threshold: 0.1 }
-    )
-    
-    sections.forEach((section) => observer.observe(section))
-
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll, { passive: true })
     handleScroll()
-    
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-      sections.forEach((section) => observer.unobserve(section))
-    }
+
+    return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
   const handleMap = () => {
@@ -290,7 +270,7 @@ export default function HomePage() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-amber-200/20 via-transparent to-orange-200/20"></div>
         <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="text-center space-y-8 animate-fade-in-up">
+          <div className="text-center space-y-8">
             {/* Trust Badge */}
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full border border-amber-200 shadow-md">
               <BadgeCheck className="w-5 h-5 text-amber-600" />
